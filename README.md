@@ -42,7 +42,9 @@ For contact or further information, please e-mail Tobias Hellmund ([mail](mailto
 ### License
 
 Content on this site is licensed under CC BY-SA 4.0.
+
 ![N](https://licensebuttons.net/l/by-sa/3.0/88x31.png)
+
 See full license [here](https://creativecommons.org/licenses/by-sa/4.0/legalcode.txt).
 
 ----
