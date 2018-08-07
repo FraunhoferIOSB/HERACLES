@@ -1,0 +1,2115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://iosb.fraunhofer.de/heracles-kb/">
+  <owl:Ontology rdf:about="">
+    <rdfs:comment>&lt;p&gt;The HERACLES ontology.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>HERACLES Ontology</rdfs:label>
+  </owl:Ontology>
+  <owl:Class rdf:about="Building">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="Structure"/>
+    </rdfs:subClassOf>
+    <rdfs:comment>A structure with walls and a roof, such as a house or factory.</rdfs:comment>
+    <rdfs:label>Building</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="TaskingCapability">
+    <rdfs:comment>&lt;p&gt;The tasking capability allows other devices or users to remotely request the execution of tasks that shall be carried out by connected devices and models.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>Tasking Capability</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="Artefact">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="Asset"/>
+    </rdfs:subClassOf>
+    <rdfs:label>Artefact</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="Parameter">
+    <rdfs:comment>A parameter refers to an observed property of a CH asset or its surroundings, e.g. temperature or humidity.</rdfs:comment>
+    <rdfs:label>Parameter</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="InputParameter">
+    <rdfs:comment>&lt;p&gt;Input parameter accepted/required by a tasking capability. Records the description of the parameter and the definition of the data type and unit of measurement.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>Input Parameter</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="Location">
+    <rdfs:comment>A Location locates a SensorThing. Multiple SensorThings may be located at the same Location.</rdfs:comment>
+    <rdfs:label>Location</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="DataSet">
+    <rdfs:comment>&lt;p&gt;The measurements and calculations relative to Assets is organized into DataSets. The actual values are available in repositories outside the knowledge base, e.g. SensorThings API server, a server implementing protocols like WMS and WFS, or a repository providing access to documents. For data points managed by the SensorThings API server, a DataSet is equivalent to a Datastream and groups a collection of Observations measuring the same Parameter and produced by the same Sensor.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>DataSet</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="ServiceProtocol">
+    <rdfs:comment>&lt;p&gt;Lists protocols that shall be used to interact with external services.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>Service Protocol</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="Site">
+    <rdfs:comment>Works of man or the combined works of nature and of man, and areas including archaeological sites which are of outstanding universal value from the historical, aesthetic, ethnological or anthropological points of view. (In UNESCO's Convention concerning the Protection of the World Cultural and Natural Heritage 1972).</rdfs:comment>
+    <rdfs:label>Site</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="cohesion">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="ChemicalProperty"/>
+    </rdfs:subClassOf>
+    <rdfs:comment>&lt;p&gt;Describes the capacity of materials to form a united whole.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>cohesion</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="UnitExponentiation">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="CompoundUnit"/>
+    </rdfs:subClassOf>
+    <rdfs:label>Unit Exponentiation</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="ResearchAndEducation">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="PublicSector"/>
+    </rdfs:subClassOf>
+    <rdfs:label>Research and education</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="CivilService">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="PublicSector"/>
+    </rdfs:subClassOf>
+    <rdfs:label>CivilService</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="Person">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="Stakeholder"/>
+    </rdfs:subClassOf>
+    <rdfs:comment>A person stakeholder that usually will be part of an organization.</rdfs:comment>
+    <rdfs:label>Person</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="binderAggregateRatio">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="ChemicalProperty"/>
+    </rdfs:subClassOf>
+    <rdfs:label>binder Aggregate Ratio</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="UnitDivision">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="CompoundUnit"/>
+    </rdfs:subClassOf>
+    <rdfs:label>Unit Division</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="Action">
+    <rdfs:comment>Represents an actual action that has to be executed or has been executed in order to protect cultural heritage. Implements a potential action defined in a standard operation procedure or in ad-hoc procedures.</rdfs:comment>
+    <rdfs:label>Action</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="MaterialProperty">
+    <rdfs:comment>&lt;p&gt;A quality in a material, especially one that means that it can be used in a particular way.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>Material Property</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="VisitorNumbers">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="CulturalHeritageProperty"/>
+    </rdfs:subClassOf>
+    <rdfs:label>Visitor Numbers</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="SOP">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="Guideline"/>
+    </rdfs:subClassOf>
+    <rdfs:comment>A standard operating procedure, or SOP, is a set of step-by-step instructions compiled by an organization to help workers carry out routine operations. SOPs aim to achieve efficiency, quality output and uniformity of performance, while reducing miscommunication and failure to comply with industry regulations.</rdfs:comment>
+    <rdfs:label>Standard Operating Procedure</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="Issue">
+    <rdfs:comment>An issue represents a problem that needs to be addressed, for instance: the risk level associated to a CH item has trespassed a certain threshold or damage has been observed.</rdfs:comment>
+    <rdfs:label>Issue</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="Town">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="Settlement"/>
+    </rdfs:subClassOf>
+    <rdfs:comment>&lt;p&gt;A place where people live and work, containing many houses, shops, places of work, places of entertainment, etc.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>Town</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="EconomicValue2">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="EconomicProperty"/>
+    </rdfs:subClassOf>
+    <rdfs:label>Economic Value</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="RestorationConservation2">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="ActionType"/>
+    </rdfs:subClassOf>
+    <rdfs:label>Restoration conservation</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="ServiceEndpoint">
+    <rdfs:comment>&lt;p&gt;Provides URL and protocol to access external services.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>Service Endpoint</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="AssetRepresentationType">
+    <rdfs:label>Asset Representation Type</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="Measurement">
+    <rdfs:subClassOf rdf:resource="Action"/>
+    <rdfs:comment>&lt;p&gt;A measurement refers to the act or process of measuring in the context of a measurement campaign.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>Measurement</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="thermogravimetric_temp">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="Thermogravimetrics"/>
+    </rdfs:subClassOf>
+    <rdfs:label>thermogravimetric temperature</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="thermogravimetric_weight">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="Thermogravimetrics"/>
+    </rdfs:subClassOf>
+    <rdfs:label>thermogravemtrics weight</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="shearViscosity">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="MechanicalProperty"/>
+    </rdfs:subClassOf>
+    <rdfs:label>shear viscosity</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="Effect">
+    <rdfs:comment>An effect is an actual occurrence of a certain effect type.</rdfs:comment>
+    <rdfs:label>Effect</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="CulturalHeritageProperty">
+    <rdfs:comment>&lt;p&gt;Quantifieable Cultural heritage properties&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>Cultural Heritage Properties</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="Documentation">
+    <rdfs:comment>&lt;ul&gt;
+&lt;li&gt;photographic documentation (throughout the whole conservation project)&lt;/li&gt;
+&lt;li&gt;drawing documentation&lt;/li&gt;
+&lt;/ul&gt;</rdfs:comment>
+    <rdfs:label>Documentation</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="NatureMonument">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="Asset"/>
+    </rdfs:subClassOf>
+    <rdfs:comment>&lt;p&gt;A natural monument is a natural or natural/cultural feature of outstanding or unique value because of its inherent rarity, representative of aesthetic qualities or cultural significance.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>Nature Monument</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="KnowledgeSharing">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="culturalValue"/>
+    </rdfs:subClassOf>
+    <rdfs:comment>&lt;p&gt;Cultural Heritage can impart knowledge, e.g. through exhibitions.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>Knowledge Sharing</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="Cemetery">
+    <rdfs:subClassOf rdf:resource="Site"/>
+    <rdfs:comment>&lt;p&gt;An area of ground in which dead bodies are buried.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>Cemetery</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="Organization">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="Stakeholder"/>
+    </rdfs:subClassOf>
+    <rdfs:comment>A stakeholder such as an institution, company or department.</rdfs:comment>
+    <rdfs:label>Organization</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="PublicSector">
+    <rdfs:subClassOf rdf:resource="Organization"/>
+    <rdfs:comment>The public sector is the part of the economy concerned with providing various governmental services.</rdfs:comment>
+    <rdfs:label>Public Sector</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="Vulnerability">
+    <rdfs:subClassOf rdf:resource="CulturalHeritageProperty"/>
+    <rdfs:comment>&lt;p&gt;Vulnerability related to a specific hazard is expressed by one or more variables for a particular situation and/or part(s) of the CH. The assessment can be performed for an entire CH as a unique element. The CH can be discretized and the assessment can be performed spatially for each segment or the assessment can be performed for a particular part of the CH. The estimations related to the vulnerability will be based on the various models that will operate within or without the Platform. Each model will provide the results of the analysis and their expression for vulnerability will be made with the use of thresholds that will be set based on the attributes of the phenomenon.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>Vulnerability</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="DecisionMaker">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="Role"/>
+    </rdfs:subClassOf>
+    <rdfs:comment>A user of the system that con decides which actions should be carried out. Decision makers may require authorization to execute the proposed actions.</rdfs:comment>
+    <rdfs:label>Decision Maker</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="Thermogravimetrics">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="PhysicalProperty"/>
+    </rdfs:subClassOf>
+    <rdfs:label>Thermogravimetrics</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="PrivateSector">
+    <rdfs:subClassOf rdf:resource="Organization"/>
+    <rdfs:comment>The private sector is the part of the economy which is run by private individuals or groups, usually as a means of enterprise for profit.</rdfs:comment>
+    <rdfs:label>Private Sector</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="CompressiveStrength">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="MechanicalProperty"/>
+    </rdfs:subClassOf>
+    <rdfs:comment>&lt;p&gt;&lt;span style="color: #222222; font-family: sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;"&gt;Maximum stress a material can withstand before compressive failure&lt;/span&gt;.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>Compressive Strength</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="Document">
+    <rdfs:comment>A generic Document class to store document in the KB, e.g. an Excel/Word/Image file with results from a measurement.</rdfs:comment>
+    <rdfs:label>Document</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="Report">
+    <rdfs:comment>&lt;p&gt;Resulting report of a workflow.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>Report</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="ConstructionSector">
+    <rdfs:subClassOf rdf:resource="PrivateSector"/>
+    <rdfs:label>Construction Sector</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="Alert">
+    <rdfs:comment>&lt;p&gt;An alert is a message sent out to the public to warn addressees of specific and urgent hazards.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>Alert</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="intangibleCH">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="CulturalHeritage"/>
+    </rdfs:subClassOf>
+    <rdfs:comment>&lt;p&gt;The &amp;ldquo;intangible cultural heritage&amp;rdquo; means the practices, representations, expressions, knowledge, skills &amp;ndash; as well as the instruments, objects, artefacts and cultural spaces associated therewith &amp;ndash; that communities, groups and, in some cases, individuals recognize as part of their cultural heritage. This intangible cultural heritage, transmitted from generation to generation, is constantly recreated by communities and groups in response to their environment, their interaction with nature and their history, and provides them with a sense of identity and continuity, thus promoting respect for cultural diversity and human creativity. &lt;/p&gt;&#xD;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;&#xD;
+&lt;p&gt;Source: UNESCO - CONVENTION FOR THE SAFEGUARDING OF THE INTANGIBLE CULTURAL HERITAGE. Paris, 17 October 2003&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>Intangible Cultural Heritage</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="Sensor">
+    <rdfs:comment>A Sensor is an instrument that observes a property or phenomenon with the goal of producing an estimate of the value of a parameter.</rdfs:comment>
+    <rdfs:label>Sensor</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="Material">
+    <rdfs:comment>&lt;p&gt;Materials used in the construction of the CH assets and in later interventions.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>Material</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="injectability">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="PhysicalProperty"/>
+    </rdfs:subClassOf>
+    <rdfs:comment>&lt;p&gt;Describes the capacity to penetrate decayed stone to restock possible subsurface cavities.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>injectability</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="DirectEconomicValue">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="CulturalHeritageValue"/>
+    </rdfs:subClassOf>
+    <rdfs:comment>&lt;p&gt;Direct use benefits include residential, commercial, tourism, recreational, leisure, and entertainment activities, as well as education and knowledge, and religious and spiritual benefits. Increasingly, there may also be a distant use benefits, as that one generated by media, photographic or artistic representation of built heritage assets as well as by on-line interaction.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>Direct Economic Value</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="TourismSector">
+    <rdfs:subClassOf rdf:resource="PrivateSector"/>
+    <rdfs:label>Tourism Sector</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="Risk">
+    <rdfs:comment>&lt;p&gt;Risk: UNISDR (2009) defines risk as &amp;ldquo;the probability of harmful consequences, or expected losses, deaths, injuries, property, livelihoods, economic activity disrupted or environment damaged) resulting from interactions between (natural, human induced or man-made) hazards and vulnerable conditions in a given area and time period&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;Risk assessment is carried out by using the definition proposed by the European Commission (ISO/EC, 2009). According to this definition, risk is defined as &amp;ldquo;the probability of harmful consequences, or expected losses (deaths, injuries to property, livelihoods, disruption to economic activities or environment), resulting from interaction between vulnerability and exposure&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;Risk can be presented conceptually with the following basic equation:&lt;br /&gt;Risk = Vulnerability X Exposure&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>Risk</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="SingularUnit">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="UnitOfMeasure"/>
+    </rdfs:subClassOf>
+    <rdfs:label>Singular Unit</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="Structure">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="Asset"/>
+    </rdfs:subClassOf>
+    <rdfs:comment>Something that has been made or built from parts, especially a building.</rdfs:comment>
+    <rdfs:label>Structure</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="EffectType">
+    <rdfs:comment>In most cases, an effect type refers to the consequences of a climate-related event, e.g., a flood or a landslide.</rdfs:comment>
+    <rdfs:label>Effect Type</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="Settlement">
+    <rdfs:subClassOf rdf:resource="Site"/>
+    <rdfs:comment>&lt;p&gt;A place where people come to live.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>Settlement</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="Architecture">
+    <rdfs:label>Architecture</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="Dimension">
+    <rdfs:comment>&lt;p&gt;Dimensions are abstract properties of units and quantities neglecting their vectorial or tensorial character and all numerical factors including their sign.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>Dimension</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="PreventiveConservation2">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="ActionType"/>
+    </rdfs:subClassOf>
+    <rdfs:label>Preventive conservation</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="PlaceOfWorship">
+    <rdfs:subClassOf rdf:resource="Site"/>
+    <rdfs:comment>&lt;p&gt;Place where a gods are worshipped and religious cermonies take place.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>Place of Worship</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="Morphology">
+    <rdfs:subClassOf rdf:resource="MaterialProperty"/>
+    <rdfs:comment>&lt;p&gt;Contains information about the morphology of the material.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>Morphology</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="Response">
+    <rdfs:comment>A response aggregates the actions that have been / are being / shall be carried out to deal with an issue.</rdfs:comment>
+    <rdfs:label>Response</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="ActionType">
+    <rdfs:comment>Types of potential actions that could be helpful to mitigate risk and prevent damage or repair assets.</rdfs:comment>
+    <rdfs:label>Action Type</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="ElasticModulus">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="MechanicalProperty"/>
+    </rdfs:subClassOf>
+    <rdfs:comment>&lt;p&gt;An elastic modulus (also known as modulus of elasticity) is a quantity that measures an object or substance's resistance to being deformed elastically (i.e., non-permanently) when a stress is applied to it.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>Elastic Modulus</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="UnitOfMeasure">
+    <rdfs:comment>&lt;p&gt;Unit of measure as in the Ontology of units of Measure and related concepts (OM).&amp;nbsp; A unit of measure is a definite magnitude of a quantity, defined and adopted by convention and/or by law, that is used as a standard for measurement of the same quantity. Any other value of the quantity can be expressed as a simple multiple of the unit of measure. For example, length is a quantity. The metre is a unit of length that represents a definite predetermined length. When we say 10 metre (or 10 m), we actually mean 10 times the definite predetermined length called "metre". "Metre" then is the Unit of Measure.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>Unit of Measure</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="Wall">
+    <rdfs:subClassOf rdf:resource="Structure"/>
+    <rdfs:comment>A vertical structure, often made of stone or brick, that divides or surrounds something.</rdfs:comment>
+    <rdfs:label>Wall</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="MobileAppReport">
+    <rdfs:label>Mobile App Report</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="Task">
+    <rdfs:comment>&lt;p&gt;The task contains properties for a user to identify the TaskingCapability he/she wants to control, the time point for executing the Task (i.e., Time), and the input values for the Task (i.e., Inputs).&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>Task</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="consultationCivilSociety">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="culturalValue"/>
+    </rdfs:subClassOf>
+    <rdfs:label>Consultation of civil society</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="Guideline">
+    <rdfs:comment>A guideline contains information intended to advise people on what and/or how something should be done.</rdfs:comment>
+    <rdfs:label>Guideline</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="DamageType">
+    <rdfs:comment>Damage types that may affect cultural heritage: material degradation, erosion, cracks, crust, crumbling, etc</rdfs:comment>
+    <rdfs:label>Damage Type</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="AnalysisAndDiagnosis2">
+    <rdfs:subClassOf rdf:resource="ActionType"/>
+    <rdfs:label>Analysis and Diagnosis</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="MaterialPurpose">
+    <rdfs:comment>&lt;p&gt;Usage purpose of a material.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>Material Purpose</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="SocialIdentity">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="culturalValue"/>
+    </rdfs:subClassOf>
+    <rdfs:comment>&lt;p&gt;Social Identity describes the benefit of people being able to find a feeling of belongig or identity.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>Social Identity</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="Domain">
+    <rdfs:comment>A knowledge domain that is relevant to CH conservation, e.g. architecture, civil engineering or materials' science.</rdfs:comment>
+    <rdfs:label>Domain</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="grainSize">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="PhysicalProperty"/>
+    </rdfs:subClassOf>
+    <rdfs:label>grain size</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="RemedialConservation2">
+    <rdfs:subClassOf rdf:resource="ActionType"/>
+    <rdfs:label>Remedial conservation</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="PhysicalProperty">
+    <rdfs:subClassOf rdf:resource="MaterialProperty"/>
+    <rdfs:label>Physical Property</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="AssetRepresentation">
+    <rdfs:comment>&lt;p&gt;An Asset Representation can be regarded as an entity that enables access to the available data about an asset, for example, temperatures in a building, pictures and measurements of the building obtained in a measurement campaign or the results from a structural model. For online sensors producing data points, it is equivalen to a Thing as defined in the SensorThings API specification: a thing is an object of the physical world (physical things) or the information world (virtual things) that is capable of being identified and integrated into communication networks.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>Asset Representation</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="Role">
+    <rdfs:comment>The position or purpose that stakeholders have.</rdfs:comment>
+    <rdfs:label>Role</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="CulturalHeritageValue">
+    <rdfs:subClassOf rdf:resource="CulturalHeritageProperty"/>
+    <rdfs:comment>&lt;p&gt;Cultural heritage assets can be considered a living presence of past human activities, with their presence in present time and space, carrying a great historic value and a high degree of local specificity. In part, their long-term existence is the result of shared values held among residents, and sometimes a broader community - so that, this type of good is emerging out of common values of society. This holds true for historic landmarks and also for non-monumental buildings, which often have a symbolic value.&lt;/p&gt;&#xD;
+&lt;p&gt;Cultural goods usually embody a form (or sense) of creativity, a historic-symbolic meaning, and a reference to an important era, a style, a building innovation, or a celebrated event in the past.&lt;/p&gt;&#xD;
+&lt;p&gt;By employing the Total Economic Value framework, we can identify a primary categorisation of use and non-use benefits, with the &amp;ldquo;use&amp;rdquo; benefits being subdivided into direct and indirect use.&lt;/p&gt;&#xD;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;&#xD;
+&lt;p&gt;The evaluation of the benefits of different risk management interventions for reducing climatic change impact, in the context of risk assessment in the HERACLES platform, can be based on the direct and indirect value of the sites. These values present the socioeconomic values of the sites and are used as the &lt;strong&gt;exposure&lt;/strong&gt; value in the risk assessment.&lt;/p&gt;&#xD;
+&lt;p&gt;Value = Direct Economic Value + Indirect Economic Value + Non-market value + Cultural value&lt;/p&gt;&#xD;
+&lt;p&gt;Based on the presentation and analysis of the &amp;ldquo;Total Economic Value framework for cultural heritage&amp;rdquo;, each cultural heritage site creates four types of value: Direct economic value; indirect economic value; non-market value; cultural value. &lt;strong&gt;The method is restricted to the first two types of value.&lt;/strong&gt;&lt;/p&gt;&#xD;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>Cultural Heritage Value</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="OpticalProperty">
+    <rdfs:subClassOf rdf:resource="MaterialProperty"/>
+    <rdfs:label>Optical Property</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="IndirectEconomicValue">
+    <rdfs:subClassOf rdf:resource="CulturalHeritageValue"/>
+    <rdfs:comment>&lt;p&gt;Indirect use benefits could arise in the form of enhanced community image and social interaction.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>Indirect Economic Value</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="Monument">
+    <rdfs:subClassOf rdf:resource="Structure"/>
+    <rdfs:comment>A structure or building that is built to honour a special person or event.</rdfs:comment>
+    <rdfs:label>Monument</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="culturalHertiageElement">
+    <rdfs:comment>&lt;p&gt;Represents elements or components of a Cultural Heritage which are analysed during a measurement. This can i.e. be a room, wall or ceiling.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>Cultural Hertiage Element</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="MechanicalProperty">
+    <rdfs:subClassOf rdf:resource="MaterialProperty"/>
+    <rdfs:comment>&lt;p&gt;The mechanical and thermo-physical characterizations allow to verify the state of the conservation and the resistance to the mechanical and thermal stresses of the materials.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>Mechanical Property</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="DomainExpert">
+    <rdfs:subClassOf rdf:resource="Role"/>
+    <rdfs:comment>&lt;p&gt;Domain experts, such as university researchers and professional figures, have the know-how to analyze the more specialized technical/scientific information provided by the system in order to provide information for the support to the decision makers.&lt;/p&gt;&#xD;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;&#xD;
+&lt;p&gt;The domain expert has a domain in which she/he is an expert in. The domain is connected to each domain expert. Given the case a stakeholder is expert in several domains, he or she is attached to more instances from domain expert.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>Domain Expert</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="CivilSociety">
+    <rdfs:subClassOf rdf:resource="Organization"/>
+    <rdfs:comment>Civil society is the aggregate of non-governmental organizations and institutions that manifest interests and will of citizens.</rdfs:comment>
+    <rdfs:label>Civil Society</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="ParameterValue">
+    <rdfs:comment>&lt;p&gt;An acceptable value for the parameter and a human-readable description of the value.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>Parameter Value</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="CompoundUnit">
+    <rdfs:subClassOf rdf:resource="UnitOfMeasure"/>
+    <rdfs:comment>&lt;p&gt;Compound Units are units that either require two different types of measurement or describe parameters for areas.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>Compound Unit</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="MaterialType">
+    <rdfs:comment>&lt;p&gt;The type of material a specific object consists of.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>Material Type</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="ChemicalProperty">
+    <rdfs:subClassOf rdf:resource="MaterialProperty"/>
+    <rdfs:label>Chemical Property</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="Hardness">
+    <rdfs:subClassOf rdf:resource="MechanicalProperty"/>
+    <rdfs:comment>&lt;p&gt;&lt;span style="color: #222222; font-family: sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;"&gt;Ability to withstand surface indentation and scratching&lt;/span&gt;.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>Hardness</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="EconomicProperty">
+    <rdfs:subClassOf rdf:resource="MaterialProperty"/>
+    <rdfs:label>Economic Property</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="MaterialDegAssessment">
+    <rdfs:comment>&lt;p&gt;The majority of the considererd CHs is made of limestone, a sedimentary rock. This rock consists of several sediments, which are exposed to degredation. To meet every CHs need for damage mitigation and restauration, the used materials are assessed and evaluated.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>Material Degredation Assessment</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="Asset">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="CulturalHeritage"/>
+    </rdfs:subClassOf>
+    <rdfs:comment>In the context of the HERACLES project it includes buildings and historic places, monuments, etc., which are considered worthy of preservation for the future.</rdfs:comment>
+    <rdfs:label>Asset</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="Stakeholder">
+    <rdfs:comment>&lt;p&gt;A person or a organization that is involved in the conservation of cultural heritage. Examples of stakeholders include members of national, regional, local agencies, governmental/state bodies, business leaders and industry representatives, representatives from non profit groups or other citizen organizations. All end-users could also be considered stakeholders, but not all stakeholders are end-users.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>Stakeholder</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="RiskAssessment">
+    <rdfs:comment>&lt;p&gt;To establish a basis for comparing diverse environmental risks and for ranking policy alternatives, analysts must translate diverse outcomes into a common unit of analysis. Such role methods like cost-benefit analysis for restoration actions and Willingness-to-pay (WTP) methods can produce diverse outcomes.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>Risk Assessment</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="Damage">
+    <rdfs:comment>Actual damage caused to a cultural heritage item.</rdfs:comment>
+    <rdfs:label>Damage</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="aesthetics">
+    <rdfs:subClassOf rdf:resource="OpticalProperty"/>
+    <rdfs:comment>&lt;p&gt;Aesthetics describe the aesthetic values of restored materials.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>aesthetics</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="culturalValue">
+    <rdfs:subClassOf rdf:resource="CulturalHeritageValue"/>
+    <rdfs:comment>&lt;p&gt;Cultural Value describes the effect found by a cultural heritage.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>Cultural Value</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="CulturalHeritage">
+    <rdfs:comment>&lt;p&gt;Cultural Heritage (tangible and intangible) items include a large number of examples with different cultural features, including a memorial, a tree, an individual building or group of buildings, the location of an historical event, an urban area or town, a cultural landscape, a garden, an industrial plant, a shipwreck, a site with in situ remains, a stone arrangement, a road or travel route, a community meeting place, a site with spiritual or religious connections. In the context of the HERACLES project the main CH items considered are:&lt;/p&gt;
+&lt;ul style="list-style-type: disc;"&gt;
+&lt;li&gt;monuments : architectural works, works of monumental sculpture and painting, elements or structures of an archaeological nature, inscriptions, cave dwellings and combinations of features, which are of outstanding universal value from the point of view of history, art or science;&lt;/li&gt;
+&lt;li&gt;groups of buildings : groups of separate or connected buildings which, because of their architecture, their homogeneity or their place in the landscape, are of outstanding universal value from the point of view of history, art or science ;&lt;/li&gt;
+&lt;li&gt;sites : works of man or the combined works of nature and of man, and areas including archaeological sites which are of outstanding universal value from the historical, aesthetic, ethnological or anthropological points of view. (In UNESCO's Convention concerning the Protection of the World Cultural and Natural Heritage 1972).&lt;/li&gt;
+&lt;/ul&gt;</rdfs:comment>
+    <rdfs:label>Cultural Heritage</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="FeatureOfInterest">
+    <rdfs:comment>An Observation's FeatureOfInterest can be the Location of the SensorThing. For example, the FeatureOfInterest of a wifi-connected temperature sensor can be the Location of the sensor (i.e., the room where the sensor is located in). In the case of remote sensing, the FeatureOfInterest can be the geographical area or volume that is being sensed. </rdfs:comment>
+    <rdfs:label>Feature of Interest</rdfs:label>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="producedDocument">
+    <rdfs:domain rdf:resource="DataSet"/>
+    <rdfs:range rdf:resource="Document"/>
+    <rdfs:label>produced document</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="datasetEndpoint">
+    <rdfs:range rdf:resource="ServiceEndpoint"/>
+    <rdfs:domain rdf:resource="DataSet"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="endpointOfDataset"/>
+    </owl:inverseOf>
+    <rdfs:label>dataset endpoint</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="RiskExposureIs">
+    <rdfs:range rdf:resource="CulturalHeritageValue"/>
+    <rdfs:domain rdf:resource="Risk"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="determinesRiskExposureComponent"/>
+    </owl:inverseOf>
+    <rdfs:label>exposure component of risk is</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="derivedFormEffect">
+    <rdfs:domain rdf:resource="Effect"/>
+    <rdfs:range rdf:resource="Effect"/>
+    <rdfs:label>derived from effect</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="performedAt">
+    <rdfs:range rdf:resource="Location"/>
+    <rdfs:domain rdf:resource="Measurement"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="isLocOfMeasurement"/>
+    </owl:inverseOf>
+    <rdfs:comment>&lt;p&gt;Indicates the Location where a measurement takes place.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>performed at</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="isConductedIn">
+    <rdfs:domain rdf:resource="MaterialDegAssessment"/>
+    <rdfs:range rdf:resource="AnalysisAndDiagnosis2"/>
+    <rdfs:label>is conducted in</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="triggeredByStakeholder">
+    <rdfs:domain rdf:resource="SOP"/>
+    <rdfs:range rdf:resource="Stakeholder"/>
+    <rdfs:label>triggered by stakeholder</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="parameterValueCharacterizesEffect">
+    <rdfs:domain rdf:resource="ParameterValue"/>
+    <rdfs:range rdf:resource="Effect"/>
+    <rdfs:label>parameter value characterizes effect</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="CompressiveStrengthUnits">
+    <rdfs:range rdf:resource="UnitDivision"/>
+    <rdfs:domain rdf:resource="CompressiveStrength"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="areUnitsOfCompressiveStrength"/>
+    </owl:inverseOf>
+    <rdfs:label>compressive strength units</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="isExpertIn">
+    <rdfs:range rdf:resource="Domain"/>
+    <rdfs:domain rdf:resource="DomainExpert"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="hasDomainExpert"/>
+    </owl:inverseOf>
+    <rdfs:comment>&lt;p&gt;Indicates the field of expertise of the domain expert.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>is expert in</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="endpointOfSensor">
+    <rdfs:domain rdf:resource="ServiceEndpoint"/>
+    <rdfs:range rdf:resource="Sensor"/>
+    <rdfs:label>endpoint of sensor</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="isOfRelevanceFor">
+    <rdfs:range rdf:resource="Stakeholder"/>
+    <rdfs:domain rdf:resource="Report"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="requireReport"/>
+    </owl:inverseOf>
+    <rdfs:comment>&lt;p&gt;The persons who have an interest about this report.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>is of relevance for</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="effectTypeReportedBy">
+    <rdfs:domain rdf:resource="EffectType"/>
+    <rdfs:range rdf:resource="Report"/>
+    <rdfs:label>effect type reported by</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="reportsDamageType">
+    <rdfs:range rdf:resource="DamageType"/>
+    <rdfs:domain rdf:resource="Report"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="isReportedBy"/>
+    </owl:inverseOf>
+    <rdfs:label>reports damage type</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="assesses">
+    <rdfs:range rdf:resource="Material"/>
+    <rdfs:domain rdf:resource="Measurement"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="materialAssessedIn"/>
+    </owl:inverseOf>
+    <rdfs:label>assesses</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="chElementIsLocatedInCHElement">
+    <rdfs:domain rdf:resource="culturalHertiageElement"/>
+    <rdfs:range rdf:resource="culturalHertiageElement"/>
+    <rdfs:label>Cultural Heritage Element is in Cultural Heritage Element</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="causesDamage">
+    <rdfs:range rdf:resource="Damage"/>
+    <rdfs:domain rdf:resource="Effect"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="isCausedByEffect"/>
+    </owl:inverseOf>
+    <rdfs:comment>&lt;p&gt;Links effect occurrences to actual damage suffered by CH items.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>causes damage</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="materialHasPurpose">
+    <rdfs:range rdf:resource="MaterialPurpose"/>
+    <rdfs:domain rdf:resource="Material"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="isPurposeOfMaterial"/>
+    </owl:inverseOf>
+    <rdfs:label>material has purpose</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="determinesRiskExposureComponent">
+    <rdfs:domain rdf:resource="CulturalHeritageValue"/>
+    <rdfs:range rdf:resource="Risk"/>
+    <rdfs:label>determines risk exposure component</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="isPartOfDataSet">
+    <rdfs:range rdf:resource="DataSet"/>
+    <rdfs:domain rdf:resource="Document"/>
+    <owl:inverseOf rdf:resource="producedDocument"/>
+    <rdfs:comment>&lt;p&gt;Indicates which DataSet the document is part of.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>is part of DataSet</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="hasRepresentation">
+    <rdfs:range rdf:resource="AssetRepresentation"/>
+    <rdfs:domain rdf:resource="Asset"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="providesDataAbout"/>
+    </owl:inverseOf>
+    <rdfs:comment>&lt;p&gt;Connects an asset to a SensorThing involved in its monitorization.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>has representation</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="hasTaskingCapability">
+    <rdfs:range rdf:resource="TaskingCapability"/>
+    <rdfs:domain rdf:resource="AssetRepresentation"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="isOfferedByAssetRepresentation"/>
+    </owl:inverseOf>
+    <rdfs:label>has tasking capability</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="hasArchitecture">
+    <rdfs:range rdf:resource="Architecture"/>
+    <rdfs:domain rdf:resource="Structure"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="isArchitecturalStyleOf"/>
+    </owl:inverseOf>
+    <rdfs:label>has Architecture</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="isLocOfMeasurement">
+    <rdfs:domain rdf:resource="Location"/>
+    <rdfs:range rdf:resource="Measurement"/>
+    <rdfs:label>is location of measurement</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="EstimatesHeightOf">
+    <rdfs:range rdf:resource="Risk"/>
+    <rdfs:domain rdf:resource="RiskAssessment"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="riskIsEstimatedIn"/>
+    </owl:inverseOf>
+    <rdfs:label>estimates height of</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="leadsToEffectType">
+    <rdfs:range rdf:resource="EffectType"/>
+    <rdfs:domain rdf:resource="EffectType"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="derivesFromEffectType"/>
+    </owl:inverseOf>
+    <rdfs:label>leads to effect type</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="conducts">
+    <rdfs:range rdf:resource="MaterialDegAssessment"/>
+    <rdfs:domain rdf:resource="AnalysisAndDiagnosis2"/>
+    <owl:inverseOf rdf:resource="isConductedIn"/>
+    <rdfs:label>conducts</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="isIncludedInOrganization">
+    <rdfs:domain rdf:resource="Organization"/>
+    <rdfs:range rdf:resource="Organization"/>
+    <rdfs:label>is included in organization</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="hasDomainExpert">
+    <rdfs:domain rdf:resource="Domain"/>
+    <rdfs:range rdf:resource="DomainExpert"/>
+    <rdfs:label>has domain expert</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="effectReportedBy">
+    <rdfs:domain rdf:resource="Effect"/>
+    <rdfs:range rdf:resource="Report"/>
+    <rdfs:label>effect reported by</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="endpointOfLocation">
+    <rdfs:domain rdf:resource="ServiceEndpoint"/>
+    <rdfs:range rdf:resource="Location"/>
+    <rdfs:label>endpoint of location</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="provides">
+    <rdfs:range rdf:resource="AssetRepresentation"/>
+    <rdfs:domain rdf:resource="Stakeholder"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="isProvidedBy"/>
+    </owl:inverseOf>
+    <rdfs:label>provides</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="containsCHE">
+    <rdfs:range rdf:resource="culturalHertiageElement"/>
+    <rdfs:domain rdf:resource="culturalHertiageElement"/>
+    <owl:inverseOf rdf:resource="chElementIsLocatedInCHElement"/>
+    <rdfs:comment>&lt;p&gt;A Cultural Heritage Element can contain another Cultural Heritage Element. A wall might be located in a room. A room can also be part of a specific building wing.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>CH Element contains CH Element</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="UMDimension">
+    <rdfs:range rdf:resource="Dimension"/>
+    <rdfs:domain rdf:resource="UnitOfMeasure"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="isDimensionOfUM"/>
+    </owl:inverseOf>
+    <rdfs:label>unit of measure dimension</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="hasDocument">
+    <rdfs:domain rdf:resource="FeatureOfInterest"/>
+    <rdfs:range rdf:resource="Document"/>
+    <rdfs:label>has document</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="isTaskOf">
+    <rdfs:range rdf:resource="TaskingCapability"/>
+    <rdfs:domain rdf:resource="Task"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="isTaskingCapabilityOf"/>
+    </owl:inverseOf>
+    <rdfs:label>is task of</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="carriesOut">
+    <rdfs:domain rdf:resource="Stakeholder"/>
+    <rdfs:range rdf:resource="MaterialDegAssessment"/>
+    <rdfs:label>carries out</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="endpointOfAsset">
+    <rdfs:range rdf:resource="Asset"/>
+    <rdfs:domain rdf:resource="ServiceEndpoint"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="assetEndpoint"/>
+    </owl:inverseOf>
+    <rdfs:comment>&lt;p&gt;Recapitulates all accessible data for an asset.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>endpoint of asset</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="storesValuesOfModel">
+    <rdfs:range rdf:resource="AssetRepresentation"/>
+    <rdfs:domain rdf:resource="Document"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="modelResultStoredInDoucment"/>
+    </owl:inverseOf>
+    <rdfs:label>stores values of model</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="sendsOut">
+    <rdfs:domain rdf:resource="Person"/>
+    <rdfs:range rdf:resource="Alert"/>
+    <rdfs:label>sendsOut</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="assetEndpoint">
+    <rdfs:domain rdf:resource="Asset"/>
+    <rdfs:range rdf:resource="ServiceEndpoint"/>
+    <rdfs:label>asset endpoint</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="storesValuesOfSensor">
+    <rdfs:range rdf:resource="Sensor"/>
+    <rdfs:domain rdf:resource="Document"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="valuesStoredInDocument"/>
+    </owl:inverseOf>
+    <rdfs:label>stores values of sensor</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="isStakeholderOfCH">
+    <rdfs:range rdf:resource="CulturalHeritage"/>
+    <rdfs:domain rdf:resource="Stakeholder"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="culturalHeritageHasStakeholder"/>
+    </owl:inverseOf>
+    <rdfs:label>is stakeholder of CH</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="organizationIncludes">
+    <rdfs:range rdf:resource="Organization"/>
+    <rdfs:domain rdf:resource="Organization"/>
+    <owl:inverseOf rdf:resource="isIncludedInOrganization"/>
+    <rdfs:comment>Establishes relationships between organizations that are part or bigger organizations.</rdfs:comment>
+    <rdfs:label>organization includes</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="affects">
+    <rdfs:range rdf:resource="CulturalHeritage"/>
+    <rdfs:domain rdf:resource="Damage"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="suffers"/>
+    </owl:inverseOf>
+    <rdfs:comment>&lt;p&gt;Links damage instances to the CH items that suffers the damage.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>affects</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="isFollowedBy">
+    <rdfs:domain rdf:resource="Guideline"/>
+    <rdfs:range rdf:resource="Response"/>
+    <rdfs:label>is followed by</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="guidelineIncludes">
+    <rdfs:range rdf:resource="ActionType"/>
+    <rdfs:domain rdf:resource="Guideline"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="isIncludedInGuideline"/>
+    </owl:inverseOf>
+    <rdfs:comment>Connects a guideline to the actions it includes.</rdfs:comment>
+    <rdfs:label>guideline includes</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="hasRole">
+    <rdfs:range rdf:resource="Role"/>
+    <rdfs:domain rdf:resource="Stakeholder"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="playedBy"/>
+    </owl:inverseOf>
+    <rdfs:comment>Indicates which role(s) are carried out by a stakeholder.</rdfs:comment>
+    <rdfs:label>has role</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="reportsDamage">
+    <rdfs:domain rdf:resource="Report"/>
+    <rdfs:range rdf:resource="Damage"/>
+    <rdfs:label>reports damage</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="isOfEffectType">
+    <rdfs:range rdf:resource="EffectType"/>
+    <rdfs:domain rdf:resource="Effect"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="hasEffectOccurrence"/>
+    </owl:inverseOf>
+    <rdfs:comment>Connects an occurred effect to its effect type.</rdfs:comment>
+    <rdfs:label>is of effect type</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="isMeasuredIn">
+    <rdfs:range rdf:resource="UnitOfMeasure"/>
+    <rdfs:domain rdf:resource="Parameter"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="isUnitOfParameter"/>
+    </owl:inverseOf>
+    <rdfs:label>is measured in</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="isLocationOfAssetRepresentation">
+    <rdfs:domain rdf:resource="Location"/>
+    <rdfs:range rdf:resource="AssetRepresentation"/>
+    <rdfs:label>is location of asset representation</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="usedByTaskingCapability">
+    <rdfs:domain rdf:resource="InputParameter"/>
+    <rdfs:range rdf:resource="TaskingCapability"/>
+    <rdfs:label>used by tasking capability</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="sensorProducesDataset">
+    <rdfs:domain rdf:resource="Sensor"/>
+    <rdfs:range rdf:resource="DataSet"/>
+    <rdfs:label>sensor produces dataset</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="isLocatedAt">
+    <rdfs:range rdf:resource="Location"/>
+    <rdfs:domain rdf:resource="AssetRepresentation"/>
+    <owl:inverseOf rdf:resource="isLocationOfAssetRepresentation"/>
+    <rdfs:comment>&lt;p&gt;Indicates the Location of a SensorThing.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>is located at</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="WarningIsSentIn">
+    <rdfs:domain rdf:resource="DamageType"/>
+    <rdfs:range rdf:resource="Alert"/>
+    <rdfs:label>warning is sent in</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="isProvidedBy">
+    <rdfs:domain rdf:resource="AssetRepresentation"/>
+    <rdfs:range rdf:resource="Stakeholder"/>
+    <rdfs:label>is provided by</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="isProducedBySensor">
+    <rdfs:range rdf:resource="Sensor"/>
+    <rdfs:domain rdf:resource="DataSet"/>
+    <owl:inverseOf rdf:resource="sensorProducesDataset"/>
+    <rdfs:comment>&lt;p&gt;Indicates which sensor is producing the values of the DataSet.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>is produced by sensor</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="isAnalyzedBy">
+    <rdfs:domain rdf:resource="Material"/>
+    <rdfs:range rdf:resource="MaterialDegAssessment"/>
+    <rdfs:label>is Analyzed by</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="resfersToFoI">
+    <rdfs:range rdf:resource="FeatureOfInterest"/>
+    <rdfs:domain rdf:resource="Document"/>
+    <owl:inverseOf rdf:resource="hasDocument"/>
+    <rdfs:label>refers to feature of interest</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="isOfferedByAssetRepresentation">
+    <rdfs:domain rdf:resource="TaskingCapability"/>
+    <rdfs:range rdf:resource="AssetRepresentation"/>
+    <rdfs:label>is offered by asset representation</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="documentContainsAlerInfo">
+    <rdfs:range rdf:resource="Alert"/>
+    <rdfs:domain rdf:resource="Document"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="alertInformationInDocument"/>
+    </owl:inverseOf>
+    <rdfs:label>document contains alert information</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="isTaskingCapabilityOf">
+    <rdfs:domain rdf:resource="TaskingCapability"/>
+    <rdfs:range rdf:resource="Task"/>
+    <rdfs:label>is tasking capability of</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="measuredAtSurrounding">
+    <rdfs:range rdf:resource="Parameter"/>
+    <rdfs:domain rdf:resource="Measurement"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="hasEnvironmentParameter"/>
+    </owl:inverseOf>
+    <rdfs:comment>&lt;p&gt;material property measured at environmental condition e.g. temperature or humidity.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>measured at surrounding</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="LocationOfParameter">
+    <rdfs:domain rdf:resource="Location"/>
+    <rdfs:range rdf:resource="Parameter"/>
+    <rdfs:label>Location where Parameter was observed</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="DivisionNumerator">
+    <rdfs:range rdf:resource="UnitOfMeasure"/>
+    <rdfs:domain rdf:resource="UnitDivision"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="isNumeratorOfUnitDivision"/>
+    </owl:inverseOf>
+    <rdfs:label>division numerator</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="isImplementedBy">
+    <rdfs:domain rdf:resource="ActionType"/>
+    <rdfs:range rdf:resource="Action"/>
+    <rdfs:label>is implemented by</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="isLocationOfSensor">
+    <rdfs:range rdf:resource="Sensor"/>
+    <rdfs:domain rdf:resource="Location"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="sensorIsLocatedAtLocation"/>
+    </owl:inverseOf>
+    <rdfs:label>is location of sensor</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="indicates">
+    <rdfs:range rdf:resource="Damage"/>
+    <rdfs:domain rdf:resource="MaterialDegAssessment"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="isIndicatedIn"/>
+    </owl:inverseOf>
+    <rdfs:label>indicates</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="sensorUsedIn">
+    <rdfs:domain rdf:resource="Sensor"/>
+    <rdfs:range rdf:resource="AnalysisAndDiagnosis2"/>
+    <rdfs:label>sensor used in analysis</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="sensorIsLocatedAtLocation">
+    <rdfs:domain rdf:resource="Sensor"/>
+    <rdfs:range rdf:resource="Location"/>
+    <rdfs:label>sensor is located at location</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="suffers">
+    <rdfs:domain rdf:resource="CulturalHeritage"/>
+    <rdfs:range rdf:resource="Damage"/>
+    <rdfs:label>suffers</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="measuredIn">
+    <rdfs:domain rdf:resource="Parameter"/>
+    <rdfs:range rdf:resource="Measurement"/>
+    <rdfs:label>measured in</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="locationEndpoint">
+    <rdfs:range rdf:resource="ServiceEndpoint"/>
+    <rdfs:domain rdf:resource="Location"/>
+    <owl:inverseOf rdf:resource="endpointOfLocation"/>
+    <rdfs:label>location endpoint</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="chElementHasMaterial">
+    <rdfs:domain rdf:resource="culturalHertiageElement"/>
+    <rdfs:range rdf:resource="Material"/>
+    <rdfs:label>CH Element has Material</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="documentContainsCHInfo">
+    <rdfs:range rdf:resource="CulturalHeritage"/>
+    <rdfs:domain rdf:resource="Document"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="chInformationInDocument"/>
+    </owl:inverseOf>
+    <rdfs:label>document contains cultural heritage information</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="generatesRisk">
+    <rdfs:domain rdf:resource="EffectType"/>
+    <rdfs:range rdf:resource="Risk"/>
+    <rdfs:label>generates risk</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="impacts">
+    <rdfs:range rdf:resource="CulturalHeritage"/>
+    <rdfs:domain rdf:resource="Risk"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="isImpactedBy"/>
+    </owl:inverseOf>
+    <rdfs:comment>&lt;p&gt;Points to cultural heritage that is jeopardized by a given risk.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>impacts</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="leadsToEffect">
+    <rdfs:range rdf:resource="Effect"/>
+    <rdfs:domain rdf:resource="Effect"/>
+    <owl:inverseOf rdf:resource="derivedFormEffect"/>
+    <rdfs:label>leads to effect</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="hasProperty">
+    <rdfs:range rdf:resource="MaterialProperty"/>
+    <rdfs:domain rdf:resource="Material"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="characterizesMaterial"/>
+    </owl:inverseOf>
+    <rdfs:label>has property</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="hasEnvironmentParameter">
+    <rdfs:domain rdf:resource="Parameter"/>
+    <rdfs:range rdf:resource="Measurement"/>
+    <rdfs:label>has environment parameter</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="isMeasuredWith">
+    <rdfs:range rdf:resource="Sensor"/>
+    <rdfs:domain rdf:resource="Measurement"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="usedToMeasure"/>
+    </owl:inverseOf>
+    <rdfs:comment>&lt;p&gt;Indicates which sensor was used to perform the measurement.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>is measured with</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="MaterialPropertyhasUnit">
+    <rdfs:range rdf:resource="UnitOfMeasure"/>
+    <rdfs:domain rdf:resource="MaterialProperty"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="isUnitOfMaterialProperty"/>
+    </owl:inverseOf>
+    <rdfs:label>material property has unit</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="isCausedByRisk">
+    <rdfs:domain rdf:resource="DamageType"/>
+    <rdfs:range rdf:resource="Risk"/>
+    <rdfs:label>is caused by risk</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="hasParameterValue">
+    <rdfs:range rdf:resource="ParameterValue"/>
+    <rdfs:domain rdf:resource="Task"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="isInputToTask"/>
+    </owl:inverseOf>
+    <rdfs:label>has parameter value</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="documentContainsDamInfo">
+    <rdfs:range rdf:resource="Damage"/>
+    <rdfs:domain rdf:resource="Document"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="damageInformationInDocument"/>
+    </owl:inverseOf>
+    <rdfs:label>document contains damage information</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="isDimensionOfUM">
+    <rdfs:domain rdf:resource="Dimension"/>
+    <rdfs:range rdf:resource="UnitOfMeasure"/>
+    <rdfs:label>is dimension of unit of measurement</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="isMeasurementOf">
+    <rdfs:range rdf:resource="Parameter"/>
+    <rdfs:domain rdf:resource="Measurement"/>
+    <owl:inverseOf rdf:resource="measuredIn"/>
+    <rdfs:comment>&lt;p&gt;Connects a measurement with the parameter that is measured.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>is measurement of</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="damageInformationInDocument">
+    <rdfs:domain rdf:resource="Damage"/>
+    <rdfs:range rdf:resource="Document"/>
+    <rdfs:label>damage information is stored in document</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="hasMaterialType">
+    <rdfs:domain rdf:resource="Material"/>
+    <rdfs:range rdf:resource="MaterialType"/>
+    <rdfs:label>hasMaterialType</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="sensorEndpoint">
+    <rdfs:range rdf:resource="ServiceEndpoint"/>
+    <rdfs:domain rdf:resource="Sensor"/>
+    <owl:inverseOf rdf:resource="endpointOfSensor"/>
+    <rdfs:label>sensor endpoint</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="alertInformationInDocument">
+    <rdfs:domain rdf:resource="Alert"/>
+    <rdfs:range rdf:resource="Document"/>
+    <rdfs:label>alert information is stored in document</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="chHasElement">
+    <rdfs:domain rdf:resource="CulturalHeritage"/>
+    <rdfs:range rdf:resource="culturalHertiageElement"/>
+    <rdfs:label>CH has CH Element</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="hasChProperty">
+    <rdfs:range rdf:resource="CulturalHeritageProperty"/>
+    <rdfs:domain rdf:resource="CulturalHeritage"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="describes"/>
+    </owl:inverseOf>
+    <rdfs:label>has CH property</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="usedByEndpoint">
+    <rdfs:domain rdf:resource="ServiceProtocol"/>
+    <rdfs:range rdf:resource="ServiceEndpoint"/>
+    <rdfs:label>used by endpoint</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="materialAssessedIn">
+    <rdfs:domain rdf:resource="Material"/>
+    <rdfs:range rdf:resource="Measurement"/>
+    <rdfs:label>material assessed in</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="isLocationOfCHElement">
+    <rdfs:domain rdf:resource="Location"/>
+    <rdfs:range rdf:resource="culturalHertiageElement"/>
+    <rdfs:label>is location of Cultural Heritage Element</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="storesResultOfMeasuremen">
+    <rdfs:range rdf:resource="Measurement"/>
+    <rdfs:domain rdf:resource="Document"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="measurementResultStoredIn"/>
+    </owl:inverseOf>
+    <rdfs:comment>&lt;p&gt;The document contains the results that resulted from the measurement.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>stores result of measurement</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="endpointOfDataset">
+    <rdfs:domain rdf:resource="ServiceEndpoint"/>
+    <rdfs:range rdf:resource="DataSet"/>
+    <rdfs:label>endpoint of dataset</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="isReportedBy">
+    <rdfs:domain rdf:resource="DamageType"/>
+    <rdfs:range rdf:resource="Report"/>
+    <owl:inverseOf rdf:resource="reportsDamage"/>
+    <rdfs:label>is reported by</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="isUnitOfParameter">
+    <rdfs:domain rdf:resource="UnitOfMeasure"/>
+    <rdfs:range rdf:resource="Parameter"/>
+    <rdfs:label>is unit of parameter</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="requireReport">
+    <rdfs:domain rdf:resource="Stakeholder"/>
+    <rdfs:range rdf:resource="Report"/>
+    <rdfs:label>requireReport</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="measurementResultStoredIn">
+    <rdfs:domain rdf:resource="Measurement"/>
+    <rdfs:range rdf:resource="Document"/>
+    <rdfs:label>measurement results are stored in document</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="isMitigatedByType">
+    <rdfs:domain rdf:resource="DamageType"/>
+    <rdfs:range rdf:resource="ActionType"/>
+    <rdfs:label>is mitigated by type</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="documentContainsAsReInfo">
+    <rdfs:range rdf:resource="AssetRepresentation"/>
+    <rdfs:domain rdf:resource="Document"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="asRepInformationInDocument"/>
+    </owl:inverseOf>
+    <rdfs:label>document contains asset representation information</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="assessesMaterialProperty">
+    <rdfs:range rdf:resource="MaterialProperty"/>
+    <rdfs:domain rdf:resource="Measurement"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="isAnalyzedByMeasurement"/>
+    </owl:inverseOf>
+    <rdfs:label>assesses Material Property</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="observes">
+    <rdfs:range rdf:resource="Asset"/>
+    <rdfs:domain rdf:resource="Measurement"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="isObservedIn"/>
+    </owl:inverseOf>
+    <rdfs:comment>&lt;p&gt;Relates a measurement to the asset under observation.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>observes</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="locatedIn">
+    <rdfs:domain rdf:resource="Asset"/>
+    <rdfs:range rdf:resource="Site"/>
+    <rdfs:label>located in</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="documentContainsEffecInf">
+    <rdfs:range rdf:resource="Effect"/>
+    <rdfs:domain rdf:resource="Document"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="effectInformationInDocument"/>
+    </owl:inverseOf>
+    <rdfs:label>document contains effect information</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="implements">
+    <rdfs:range rdf:resource="ActionType"/>
+    <rdfs:domain rdf:resource="Action"/>
+    <owl:inverseOf rdf:resource="isImplementedBy"/>
+    <rdfs:comment>Relates an actual action to a potential action type.</rdfs:comment>
+    <rdfs:label>implements</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="isOfModelType">
+    <rdfs:range rdf:resource="AssetRepresentationType"/>
+    <rdfs:domain rdf:resource="AssetRepresentation"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="showsAssetRepresentationType"/>
+    </owl:inverseOf>
+    <rdfs:label>isOfModelType</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="endpointOfAssetRepr">
+    <rdfs:domain rdf:resource="ServiceEndpoint"/>
+    <rdfs:range rdf:resource="AssetRepresentation"/>
+    <rdfs:label>endpoint of asset representation</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="hasParameterUnit">
+    <rdfs:range rdf:resource="Parameter"/>
+    <rdfs:domain rdf:resource="ParameterValue"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="parameterHasParameterValue"/>
+    </owl:inverseOf>
+    <rdfs:comment>&lt;p&gt;The unit describing a parameter&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>has Parameter Unit</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="chInformationInDocument">
+    <rdfs:domain rdf:resource="CulturalHeritage"/>
+    <rdfs:range rdf:resource="Document"/>
+    <rdfs:label>cultural heritage information is stored in document</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="isCausedByParameter">
+    <rdfs:domain rdf:resource="EffectType"/>
+    <rdfs:range rdf:resource="Parameter"/>
+    <rdfs:label>is caused by parameter</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="isBasedOn">
+    <rdfs:range rdf:resource="Guideline"/>
+    <rdfs:domain rdf:resource="Response"/>
+    <owl:inverseOf rdf:resource="isFollowedBy"/>
+    <rdfs:comment>Indicates which guideline(s) was/were considered to define the response.</rdfs:comment>
+    <rdfs:label>is based on</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="providesDataAbout">
+    <rdfs:domain rdf:resource="AssetRepresentation"/>
+    <rdfs:range rdf:resource="Asset"/>
+    <rdfs:label>provides data about</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="effectCausesDamage">
+    <rdfs:range rdf:resource="DamageType"/>
+    <rdfs:domain rdf:resource="EffectType"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="isCausedByEffect"/>
+    </owl:inverseOf>
+    <rdfs:comment>&lt;p&gt;Relates an effect, for instance a landslide or a wildfire, to the types of damage that it can produce.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>effect causes damage</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="isExecutedBy">
+    <rdfs:range rdf:resource="Stakeholder"/>
+    <rdfs:domain rdf:resource="Action"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="executes"/>
+    </owl:inverseOf>
+    <rdfs:label>is executed by</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="parameterEndpoint">
+    <rdfs:range rdf:resource="ServiceEndpoint"/>
+    <rdfs:domain rdf:resource="Parameter"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="endpointOfParameter"/>
+    </owl:inverseOf>
+    <rdfs:label>parameter endpoint</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="siteLocatedAt">
+    <rdfs:range rdf:resource="Location"/>
+    <rdfs:domain rdf:resource="Site"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="locatesSite"/>
+    </owl:inverseOf>
+    <rdfs:label>site is located at</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="isInputToTask">
+    <rdfs:domain rdf:resource="ParameterValue"/>
+    <rdfs:range rdf:resource="Task"/>
+    <rdfs:label>is input to task</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="modelResultStoredInDoucment">
+    <rdfs:domain rdf:resource="AssetRepresentation"/>
+    <rdfs:range rdf:resource="Document"/>
+    <rdfs:label>model results stored in document</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="locationOfCHElement">
+    <rdfs:range rdf:resource="Location"/>
+    <rdfs:domain rdf:resource="culturalHertiageElement"/>
+    <owl:inverseOf rdf:resource="isLocationOfCHElement"/>
+    <rdfs:comment>&lt;p&gt;Describes the location of&amp;nbsp; a Cultural Heritage Element.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>location of CH Element</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="riskIsEstimatedIn">
+    <rdfs:domain rdf:resource="Risk"/>
+    <rdfs:range rdf:resource="RiskAssessment"/>
+    <rdfs:label>risk is estimated in</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="documentContainsIssuInfo">
+    <rdfs:range rdf:resource="Issue"/>
+    <rdfs:domain rdf:resource="Document"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="issueInformationInDocument"/>
+    </owl:inverseOf>
+    <rdfs:label>document contains issue information</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="isIndicatedIn">
+    <rdfs:domain rdf:resource="Damage"/>
+    <rdfs:range rdf:resource="MaterialDegAssessment"/>
+    <rdfs:label>is indicated in</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="warnsOf">
+    <rdfs:range rdf:resource="DamageType"/>
+    <rdfs:domain rdf:resource="Alert"/>
+    <owl:inverseOf rdf:resource="WarningIsSentIn"/>
+    <rdfs:comment>&lt;p&gt;An alert warns or informs the addressee about a possible damage type.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>warnsOf</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="isUnitOfMaterialProperty">
+    <rdfs:domain rdf:resource="UnitOfMeasure"/>
+    <rdfs:range rdf:resource="MaterialProperty"/>
+    <rdfs:label>is unit of material property</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="locatesSite">
+    <rdfs:domain rdf:resource="Location"/>
+    <rdfs:range rdf:resource="Site"/>
+    <rdfs:label>locates site</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="engagesPerson">
+    <rdfs:domain rdf:resource="Organization"/>
+    <rdfs:range rdf:resource="Person"/>
+    <rdfs:label>engages person</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="documentContainsMatInfo">
+    <rdfs:range rdf:resource="Material"/>
+    <rdfs:domain rdf:resource="Document"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="materialInformationInDocument"/>
+    </owl:inverseOf>
+    <rdfs:comment>&lt;p&gt;The document contains information about a specific material.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>document contains material information</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="usedToMeasure">
+    <rdfs:domain rdf:resource="Sensor"/>
+    <rdfs:range rdf:resource="Measurement"/>
+    <rdfs:label>used to measure</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="isImpactedBy">
+    <rdfs:domain rdf:resource="CulturalHeritage"/>
+    <rdfs:range rdf:resource="Risk"/>
+    <rdfs:label>is impacted by</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="isAnalyzedByMeasurement">
+    <rdfs:domain rdf:resource="MaterialProperty"/>
+    <rdfs:range rdf:resource="Measurement"/>
+    <rdfs:label>is analyzed by measurement</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="valuesStoredInDocument">
+    <rdfs:domain rdf:resource="Sensor"/>
+    <rdfs:range rdf:resource="Document"/>
+    <rdfs:label>values stored in document</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="hasMeasurementsOf">
+    <rdfs:range rdf:resource="Parameter"/>
+    <rdfs:domain rdf:resource="DataSet"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="measurementsInDataset"/>
+    </owl:inverseOf>
+    <rdfs:comment>&lt;p&gt;Connects a DataSet to the Parameter its observations refer to.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>has measurements of</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="createsReport">
+    <rdfs:range rdf:resource="Report"/>
+    <rdfs:domain rdf:resource="SOP"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="isCreatedDuringWorkflow"/>
+    </owl:inverseOf>
+    <rdfs:label>creates report</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="hasEffectOccurrence">
+    <rdfs:domain rdf:resource="EffectType"/>
+    <rdfs:range rdf:resource="Effect"/>
+    <rdfs:label>has effect occurrence</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="riskVulnerabilityIs">
+    <rdfs:domain rdf:resource="Risk"/>
+    <rdfs:range rdf:resource="Vulnerability"/>
+    <rdfs:label>vulnerability component of risk is</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="isOfDamageType">
+    <rdfs:range rdf:resource="DamageType"/>
+    <rdfs:domain rdf:resource="Damage"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="hasDamageOccurrence"/>
+    </owl:inverseOf>
+    <rdfs:comment>Indicates what type of damage an stored damage occurrence corresponds to.</rdfs:comment>
+    <rdfs:label>is of damage type</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="reportSentInBy">
+    <rdfs:range rdf:resource="Stakeholder"/>
+    <rdfs:domain rdf:resource="Report"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="stakeholderReports"/>
+    </owl:inverseOf>
+    <rdfs:label>report sent in by</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="isArchitecturalStyleOf">
+    <rdfs:domain rdf:resource="Architecture"/>
+    <rdfs:range rdf:resource="Structure"/>
+    <rdfs:label>is architectural style of</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="reportsEffect">
+    <rdfs:range rdf:resource="Effect"/>
+    <rdfs:domain rdf:resource="Report"/>
+    <owl:inverseOf rdf:resource="effectReportedBy"/>
+    <rdfs:label>reports effect</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="isProducedByTask">
+    <rdfs:range rdf:resource="Task"/>
+    <rdfs:domain rdf:resource="DataSet"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="taskProducesDataset"/>
+    </owl:inverseOf>
+    <rdfs:label>is produced by task</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="addressedThrough">
+    <rdfs:range rdf:resource="Response"/>
+    <rdfs:domain rdf:resource="Issue"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="targets"/>
+    </owl:inverseOf>
+    <rdfs:comment>Connects a registered issue with the response(s) that are applied to counter it.</rdfs:comment>
+    <rdfs:label>addressed through</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="parameterHasParameterValue">
+    <rdfs:domain rdf:resource="Parameter"/>
+    <rdfs:range rdf:resource="ParameterValue"/>
+    <rdfs:label>parameter has parameter value</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="hasDataSet">
+    <rdfs:domain rdf:resource="AssetRepresentation"/>
+    <rdfs:range rdf:resource="DataSet"/>
+    <rdfs:label>has dataset</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="isMonitoredBy">
+    <rdfs:domain rdf:resource="Asset"/>
+    <rdfs:range rdf:resource="Sensor"/>
+    <rdfs:label>is monitored by</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="isSentBy">
+    <rdfs:range rdf:resource="Person"/>
+    <rdfs:domain rdf:resource="Alert"/>
+    <owl:inverseOf rdf:resource="sendsOut"/>
+    <rdfs:label>isSentBy</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="Analyzes">
+    <rdfs:range rdf:resource="Material"/>
+    <rdfs:domain rdf:resource="MaterialDegAssessment"/>
+    <owl:inverseOf rdf:resource="isAnalyzedBy"/>
+    <rdfs:label>analyzes</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="isPartOf">
+    <rdfs:domain rdf:resource="Action"/>
+    <rdfs:range rdf:resource="Response"/>
+    <rdfs:label>is part of</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="isPurposeOfMaterial">
+    <rdfs:domain rdf:resource="MaterialPurpose"/>
+    <rdfs:range rdf:resource="Material"/>
+    <rdfs:label>is purpose of material</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="isPrerequisitOf">
+    <rdfs:domain rdf:resource="AssetRepresentation"/>
+    <rdfs:range rdf:resource="AssetRepresentation"/>
+    <rdfs:label>is prerequisit of</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="utilizesSensor">
+    <rdfs:range rdf:resource="Sensor"/>
+    <rdfs:domain rdf:resource="AnalysisAndDiagnosis2"/>
+    <owl:inverseOf rdf:resource="sensorUsedIn"/>
+    <rdfs:label>utilizes sensor</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="hasDamageOccurrence">
+    <rdfs:domain rdf:resource="DamageType"/>
+    <rdfs:range rdf:resource="Damage"/>
+    <rdfs:label>has damage occurrence</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="reportsEffectType">
+    <rdfs:range rdf:resource="EffectType"/>
+    <rdfs:domain rdf:resource="Report"/>
+    <owl:inverseOf rdf:resource="effectTypeReportedBy"/>
+    <rdfs:comment>&lt;p&gt;The report can give information about a report type.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>reports effect type</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="DivisionDenominator">
+    <rdfs:range rdf:resource="UnitOfMeasure"/>
+    <rdfs:domain rdf:resource="UnitDivision"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="isDenominatorOfUnitDivision"/>
+    </owl:inverseOf>
+    <rdfs:label>division denominator</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="isDenominatorOfUnitDivision">
+    <rdfs:domain rdf:resource="UnitOfMeasure"/>
+    <rdfs:range rdf:resource="UnitDivision"/>
+    <rdfs:label>is denominator of unit division</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="stakeholderReports">
+    <rdfs:domain rdf:resource="Stakeholder"/>
+    <rdfs:range rdf:resource="Report"/>
+    <rdfs:label>stakeholder reports</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="getsDataFrom">
+    <rdfs:domain rdf:resource="AssetRepresentation"/>
+    <rdfs:range rdf:resource="Action"/>
+    <rdfs:label>gets data from</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="assetReprEndpoint">
+    <rdfs:range rdf:resource="ServiceEndpoint"/>
+    <rdfs:domain rdf:resource="AssetRepresentation"/>
+    <owl:inverseOf rdf:resource="endpointOfAssetRepr"/>
+    <rdfs:label>asset representation endpoint</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="executes">
+    <rdfs:domain rdf:resource="Stakeholder"/>
+    <rdfs:range rdf:resource="Action"/>
+    <rdfs:label>executes</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="isIncludedInGuideline">
+    <rdfs:domain rdf:resource="ActionType"/>
+    <rdfs:range rdf:resource="Guideline"/>
+    <rdfs:label>is included in guideline</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="determinesRiskVulnerabil">
+    <rdfs:range rdf:resource="Risk"/>
+    <rdfs:domain rdf:resource="Vulnerability"/>
+    <owl:inverseOf rdf:resource="riskVulnerabilityIs"/>
+    <rdfs:label>determines vulnerability component of risk</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="isCreatedDuringWorkflow">
+    <rdfs:domain rdf:resource="Report"/>
+    <rdfs:range rdf:resource="SOP"/>
+    <rdfs:label>is created during workflow</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="taskProducesDataset">
+    <rdfs:domain rdf:resource="Task"/>
+    <rdfs:range rdf:resource="DataSet"/>
+    <rdfs:label>task produces dataset</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="DataOutcomeIn">
+    <rdfs:range rdf:resource="AssetRepresentation"/>
+    <rdfs:domain rdf:resource="Action"/>
+    <owl:inverseOf rdf:resource="getsDataFrom"/>
+    <rdfs:label>data outcome in</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="showsAssetRepresentationType">
+    <rdfs:domain rdf:resource="AssetRepresentationType"/>
+    <rdfs:range rdf:resource="AssetRepresentation"/>
+    <rdfs:label>shows Asset Representation Type</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="isNumeratorOfUnitDivision">
+    <rdfs:domain rdf:resource="UnitOfMeasure"/>
+    <rdfs:range rdf:resource="UnitDivision"/>
+    <rdfs:label>is numerator of unit division</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="assignedToInputParameter">
+    <rdfs:domain rdf:resource="InputParameter"/>
+    <rdfs:range rdf:resource="ParameterValue"/>
+    <rdfs:label>assigned to input parameter</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="hasInputParameter">
+    <rdfs:range rdf:resource="InputParameter"/>
+    <rdfs:domain rdf:resource="TaskingCapability"/>
+    <owl:inverseOf rdf:resource="usedByTaskingCapability"/>
+    <rdfs:label>has input parameter</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="measurementsInDataset">
+    <rdfs:domain rdf:resource="Parameter"/>
+    <rdfs:range rdf:resource="DataSet"/>
+    <rdfs:label>measurements in dataset</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="materialUsedIn">
+    <rdfs:range rdf:resource="culturalHertiageElement"/>
+    <rdfs:domain rdf:resource="Material"/>
+    <owl:inverseOf rdf:resource="chElementHasMaterial"/>
+    <rdfs:comment>&lt;p&gt;Material, analysed in a measurement, is located in the Cultural Heritage Element, which is part of a Cultural Heritage.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>material is used in Cultural Heritage Element</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="sensorMonitors">
+    <rdfs:range rdf:resource="Asset"/>
+    <rdfs:domain rdf:resource="Sensor"/>
+    <owl:inverseOf rdf:resource="isMonitoredBy"/>
+    <rdfs:label>sensor monitors</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="riskCausesDamage">
+    <rdfs:range rdf:resource="DamageType"/>
+    <rdfs:domain rdf:resource="Risk"/>
+    <owl:inverseOf rdf:resource="isCausedByRisk"/>
+    <rdfs:comment>&lt;p&gt;Potential damage associated to a given risk level.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>risk causes damage</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="isMaterialTypeOfMaterial">
+    <rdfs:range rdf:resource="Material"/>
+    <rdfs:domain rdf:resource="MaterialType"/>
+    <owl:inverseOf rdf:resource="hasMaterialType"/>
+    <rdfs:comment>&lt;p&gt;Describes the type of the specific material.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>is material type of material</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="mitigatesType">
+    <rdfs:range rdf:resource="DamageType"/>
+    <rdfs:domain rdf:resource="ActionType"/>
+    <owl:inverseOf rdf:resource="isMitigatedByType"/>
+    <rdfs:label>mitigates type</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="parameterLocation">
+    <rdfs:range rdf:resource="Location"/>
+    <rdfs:domain rdf:resource="Parameter"/>
+    <owl:inverseOf rdf:resource="LocationOfParameter"/>
+    <rdfs:comment>&lt;p&gt;The location where the parameter was observed.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>Parameter has Location</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="worksForOrganization">
+    <rdfs:range rdf:resource="Organization"/>
+    <rdfs:domain rdf:resource="Person"/>
+    <owl:inverseOf rdf:resource="engagesPerson"/>
+    <rdfs:comment>&lt;p&gt;Relates a person to the organization he/she works for.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>works for organization</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="isMitigatedBy">
+    <rdfs:domain rdf:resource="Damage"/>
+    <rdfs:range rdf:resource="Action"/>
+    <rdfs:label>is mitigated by</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="isCarriedOutBy">
+    <rdfs:range rdf:resource="Stakeholder"/>
+    <rdfs:domain rdf:resource="MaterialDegAssessment"/>
+    <owl:inverseOf rdf:resource="carriesOut"/>
+    <rdfs:label>is carried out by</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="endpointOfParameter">
+    <rdfs:domain rdf:resource="ServiceEndpoint"/>
+    <rdfs:range rdf:resource="Parameter"/>
+    <rdfs:label>endpoint of parameter</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="isValueFor">
+    <rdfs:range rdf:resource="InputParameter"/>
+    <rdfs:domain rdf:resource="ParameterValue"/>
+    <owl:inverseOf rdf:resource="assignedToInputParameter"/>
+    <rdfs:label>is value for</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="culturalHeritageHasStakeholder">
+    <rdfs:domain rdf:resource="CulturalHeritage"/>
+    <rdfs:range rdf:resource="Stakeholder"/>
+    <rdfs:label>cultural heritage has stakeholder</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="effectInformationInDocument">
+    <rdfs:domain rdf:resource="Effect"/>
+    <rdfs:range rdf:resource="Document"/>
+    <rdfs:label>effect information is stored in document</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="triggersSOP">
+    <rdfs:range rdf:resource="SOP"/>
+    <rdfs:domain rdf:resource="Stakeholder"/>
+    <owl:inverseOf rdf:resource="triggeredByStakeholder"/>
+    <rdfs:label>triggers SOP</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="issueInformationInDocument">
+    <rdfs:domain rdf:resource="Issue"/>
+    <rdfs:range rdf:resource="Document"/>
+    <rdfs:label>issue information is stored in document</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="targets">
+    <rdfs:domain rdf:resource="Response"/>
+    <rdfs:range rdf:resource="Issue"/>
+    <rdfs:label>targets</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="isCausedByEffect">
+    <rdfs:domain rdf:resource="DamageType"/>
+    <rdfs:label>is caused by effect</rdfs:label>
+    <rdfs:range rdf:resource="EffectType"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="isObservedIn">
+    <rdfs:domain rdf:resource="Asset"/>
+    <rdfs:range rdf:resource="Measurement"/>
+    <rdfs:label>is observed in</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="effectHasParameterValue">
+    <rdfs:range rdf:resource="ParameterValue"/>
+    <rdfs:domain rdf:resource="Effect"/>
+    <owl:inverseOf rdf:resource="parameterValueCharacterizesEffect"/>
+    <rdfs:comment>&lt;p&gt;An effect is marked by specific surrounding parameters.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>Effect has Parameter Value</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="asRepInformationInDocument">
+    <rdfs:domain rdf:resource="AssetRepresentation"/>
+    <rdfs:range rdf:resource="Document"/>
+    <rdfs:label>asset representation information is stored in document</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="playedBy">
+    <rdfs:domain rdf:resource="Role"/>
+    <rdfs:range rdf:resource="Stakeholder"/>
+    <rdfs:label>played by</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="characterizesMaterial">
+    <rdfs:domain rdf:resource="MaterialProperty"/>
+    <rdfs:range rdf:resource="Material"/>
+    <rdfs:label>characterizes material</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="describes">
+    <rdfs:domain rdf:resource="CulturalHeritageProperty"/>
+    <rdfs:range rdf:resource="CulturalHeritage"/>
+    <rdfs:label>describes</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="chElementIn">
+    <rdfs:range rdf:resource="CulturalHeritage"/>
+    <rdfs:domain rdf:resource="culturalHertiageElement"/>
+    <owl:inverseOf rdf:resource="chHasElement"/>
+    <rdfs:comment>&lt;p&gt;A Cultural Heritage Element is element of a Cultural Heritage.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>Cultural Heritage Element is contained in CH</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="areUnitsOfCompressiveStrength">
+    <rdfs:domain rdf:resource="UnitDivision"/>
+    <rdfs:range rdf:resource="CompressiveStrength"/>
+    <rdfs:label>are units of compressive strength</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="contains">
+    <rdfs:range rdf:resource="Asset"/>
+    <rdfs:domain rdf:resource="Site"/>
+    <owl:inverseOf rdf:resource="locatedIn"/>
+    <rdfs:comment>Connects sites to the CH assets that they contain.</rdfs:comment>
+    <rdfs:label>contains</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="causesEffect">
+    <rdfs:range rdf:resource="EffectType"/>
+    <rdfs:domain rdf:resource="Parameter"/>
+    <owl:inverseOf rdf:resource="isCausedByParameter"/>
+    <rdfs:label>causes effect</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="consistsOf">
+    <rdfs:range rdf:resource="Action"/>
+    <rdfs:domain rdf:resource="Response"/>
+    <owl:inverseOf rdf:resource="isPartOf"/>
+    <rdfs:comment>Connects a response to the actions that constitute the response. </rdfs:comment>
+    <rdfs:label>consists of</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="belongsToRepresentation">
+    <rdfs:range rdf:resource="AssetRepresentation"/>
+    <rdfs:domain rdf:resource="DataSet"/>
+    <owl:inverseOf rdf:resource="hasDataSet"/>
+    <rdfs:comment>&lt;p&gt;Connects a DataSet to the Asset Representation the values in the DataSet correspond to.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>belongs to representation</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="resultsFromEffect">
+    <rdfs:range rdf:resource="EffectType"/>
+    <rdfs:domain rdf:resource="Risk"/>
+    <owl:inverseOf rdf:resource="generatesRisk"/>
+    <rdfs:comment>&lt;p&gt;Effect that creates risk.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>results from effect</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="derivesFromEffectType">
+    <rdfs:domain rdf:resource="EffectType"/>
+    <rdfs:range rdf:resource="EffectType"/>
+    <rdfs:label>derives from effect type</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="dependsOn">
+    <rdfs:range rdf:resource="AssetRepresentation"/>
+    <rdfs:domain rdf:resource="AssetRepresentation"/>
+    <owl:inverseOf rdf:resource="isPrerequisitOf"/>
+    <rdfs:comment>&lt;p&gt;Might need the output of another model as input.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>depends on</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="mitigates">
+    <rdfs:range rdf:resource="Damage"/>
+    <rdfs:domain rdf:resource="Action"/>
+    <owl:inverseOf rdf:resource="isMitigatedBy"/>
+    <rdfs:comment>&lt;p&gt;Connects carried out actions to the damages they mitigated.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>mitigates</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="usesProtocol">
+    <rdfs:range rdf:resource="ServiceProtocol"/>
+    <rdfs:domain rdf:resource="ServiceEndpoint"/>
+    <owl:inverseOf rdf:resource="usedByEndpoint"/>
+    <rdfs:label>uses protocol</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="materialInformationInDocument">
+    <rdfs:domain rdf:resource="Material"/>
+    <rdfs:range rdf:resource="Document"/>
+    <rdfs:label>material information is stored in document</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="isMeteoroligcalSensor">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:domain rdf:resource="Sensor"/>
+    <rdfs:label>is meteorological sensor</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="creationTime2">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdfs:domain rdf:resource="MobileAppReport"/>
+    <rdfs:label>creation time</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="longitude3">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:domain rdf:resource="MobileAppReport"/>
+    <rdfs:label>longitude</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="CompressiveStrengthValue">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    <rdfs:domain rdf:resource="CompressiveStrength"/>
+    <rdfs:comment>&lt;p&gt;Compressive strength or compression strength is the capacity of a material or structure to withstand loads tending to reduce size, as opposed to tensile strength, which withstands loads tending to elongate. In other words, compressive strength resists compression (being pushed together), whereas tensile strength resists tension (being pulled apart).&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>compressive strength value</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="isOnline">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:domain rdf:resource="Sensor"/>
+    <rdfs:comment>&lt;p&gt;Online sensors perform measurements and transmit their readings to the system without human intervention. Offline sensors require human intervention before their readings become available to the system.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>is Online</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="instructions">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="Alert"/>
+    <rdfs:label>instructions</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="injectabilityValue">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+    <rdfs:domain rdf:resource="injectability"/>
+    <rdfs:label>injectabilityValue</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="LongitudeOfAlert">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    <rdfs:domain rdf:resource="Alert"/>
+    <rdfs:comment>&lt;p&gt;Contains the longitude of the hazard's position.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>longitude of alert</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="aestheticsValue">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+    <rdfs:domain rdf:resource="aesthetics"/>
+    <rdfs:label>aestheticsValue</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="startTimeUTC">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdfs:domain rdf:resource="Alert"/>
+    <rdfs:comment>&lt;p&gt;Describes the start time of a hazard. The information could be based on a forecast.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>startTimeUTC</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="level">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <rdfs:domain rdf:resource="Risk"/>
+    <rdfs:comment>Value between 1 and 5 that indicates the probability of harmful consequences, where 1 is very low and 5 is very high.</rdfs:comment>
+    <rdfs:label>level</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="radius3">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    <rdfs:domain rdf:resource="Alert"/>
+    <rdfs:comment>&lt;p&gt;The radius specifies a circle around the center position of the hazard.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>radius</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="grainSizeValue_mm_lB">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:domain rdf:resource="grainSize"/>
+    <rdfs:label>grain size value [mm]_min</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="VisitorYear">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gYear"/>
+    <rdfs:domain rdf:resource="VisitorNumbers"/>
+    <rdfs:label>Visitor Year</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="LatitudeOfAlert">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    <rdfs:domain rdf:resource="Alert"/>
+    <rdfs:comment>&lt;p&gt;Contains the latitude of the hazard's position.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>latitude of alert</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="minimumValue">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:domain rdf:resource="MaterialProperty"/>
+    <rdfs:label>minimum value</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="longitude">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:domain rdf:resource="Location"/>
+    <rdfs:comment>Geographic longitude coordinate.</rdfs:comment>
+    <rdfs:label>longitude</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="latitude3">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:domain rdf:resource="MobileAppReport"/>
+    <rdfs:label>latitude</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="Value">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:domain rdf:resource="MaterialProperty"/>
+    <rdfs:comment>&lt;p&gt;is the specific value of a material property&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>Value</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="isModernMaterial">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:domain rdf:resource="Material"/>
+    <rdfs:label>is modern material</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="hasURL">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    <rdfs:domain rdf:resource="ServiceEndpoint"/>
+    <rdfs:label>has URL</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="grainSizeValue_mm_uB">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:domain rdf:resource="grainSize"/>
+    <rdfs:label>grain size value [mm]_max</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="status">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="ActionType"/>
+    <rdfs:comment>Indicates whether an action is pending, has been started or has been finished.
+TODO: define as enum rather than as string.</rdfs:comment>
+    <rdfs:label>status</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="hasTimeOfSOPStart">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="SOP"/>
+    <rdfs:label>has time of SOP start</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="expiresUTC">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <rdfs:domain rdf:resource="Alert"/>
+    <rdfs:label>expiresUTC</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="MaximumValue">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:domain rdf:resource="MaterialProperty"/>
+    <rdfs:label>maxium Value </rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="RevenueYear">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gYear"/>
+    <rdfs:domain rdf:resource="DirectEconomicValue"/>
+    <rdfs:label>Revenue year</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="text">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label>text</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="latitude">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:domain rdf:resource="Location"/>
+    <rdfs:comment>Geographic latitude coordinate.</rdfs:comment>
+    <rdfs:label>latitude</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="IndirectRevenueYear">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gYear"/>
+    <rdfs:domain rdf:resource="IndirectEconomicValue"/>
+    <rdfs:label>Indirect revenue year</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="cohesivenessValue">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+    <rdfs:domain rdf:resource="cohesion"/>
+    <rdfs:label>cohesivenessValue</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="instanceDisplayName">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label>display name</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="NumberVisitors">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdfs:domain rdf:resource="VisitorNumbers"/>
+    <rdfs:label>Number of Visitors</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="isHumanInterpretable">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:domain rdf:resource="Sensor"/>
+    <rdfs:label>isHumanInterpretable</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="shearViscosityValue">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:domain rdf:resource="shearViscosity"/>
+    <rdfs:label>shear viscosity value</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="instanceUniqueName">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label>unique name</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="DirectRevenue">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdfs:domain rdf:resource="DirectEconomicValue"/>
+    <rdfs:label>Direct revenue</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="binderAggRatio_Value">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:domain rdf:resource="binderAggregateRatio"/>
+    <rdfs:label>binder aggregate ratio value</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="unitOfMeasureSymbol">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="UnitOfMeasure"/>
+    <rdfs:label>unit of measure symbol</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="Contact">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="Person"/>
+    <rdfs:comment>&lt;p&gt;A possibility to get in touch with the person.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>Contact</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="inSitu">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:domain rdf:resource="Sensor"/>
+    <rdfs:label>inSitu</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="ParameterValue2">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:domain rdf:resource="ParameterValue"/>
+    <rdfs:label>ParameterValue</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="version">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="ServiceProtocol"/>
+    <rdfs:label>version</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="severity">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="Alert"/>
+    <rdfs:comment>&lt;p&gt;Severity of the event described by this alert.&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>severity</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="HardnessValue">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+    <rdfs:domain rdf:resource="Hardness"/>
+    <rdfs:comment>&lt;p&gt;&lt;span style="color: #222222; font-family: sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;"&gt;The Mohs scale of mineral hardness characterizes the scratch resistance of various minerals through the ability of a harder material to scratch a softer material. It was created in 1812 by the German mineralogist Friedrich Mohs and is one of several definitions of hardness in materials science.&lt;/span&gt;&lt;/p&gt;</rdfs:comment>
+    <rdfs:label>hardness value</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="isInhabited">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:domain rdf:resource="Settlement"/>
+    <rdfs:label>isInhabited</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="isUNESCOSite">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:domain rdf:resource="Site"/>
+    <rdfs:label>isUNESCOSite</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="IndirectRevenue">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdfs:domain rdf:resource="IndirectEconomicValue"/>
+    <rdfs:label>indirect revenue</rdfs:label>
+  </owl:DatatypeProperty>
+</rdf:RDF>
