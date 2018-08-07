@@ -10,13 +10,17 @@ The HERACLES Ontology helps integrating data for the preservation of cultural he
 
 The HERACLES Ontology describes several topics, which are categorized into nine domains listed in the table below.
 
-| Domains of the Heracles Ontology||
-| ------ | ------ |
-| (Tangible) Cultural Heritage Assets  |  Maintenance and Response Actions|
-| Materials |Climate Change Effects |
-| Damages | Sensors and Measurements |
-| Risk Assessment | Standard Operating Procedures |
-| Stakeholders and Roles |  |
+| Domains of the Heracles Ontology|
+| ------ |
+| (Tangible) Cultural Heritage Assets  | 
+| Maintenance and Response Actions |
+| Materials |
+| Climate Change Effects |
+| Damages |
+| Sensors and Measurements |
+| Risk Assessment |
+| Standard Operating Procedures |
+| Stakeholders and Roles | 
 
 ### The HERACLES Ontology
 
