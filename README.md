@@ -37,7 +37,7 @@ The ontology has been published or referenced in the following conferences or ma
 
 ### Contact
 
-For contact or further information, please e-mail Tobias Hellmund ([mail](mailto:tobias.hellmund@iosb.fraunhofer.de)) or Jürgen Moßgraber ([mail](mailto:juergen.mossgraber@iosb.fraunhofer.de)).
+For further information, please contact Tobias Hellmund ([mail](mailto:tobias.hellmund@iosb.fraunhofer.de), [Research Gate](https://www.researchgate.net/profile/Tobias_Hellmund)) or Jürgen Moßgraber ([mail](mailto:juergen.mossgraber@iosb.fraunhofer.de), [Research Gate](https://www.researchgate.net/profile/Juergen_Mossgraber)).
 
 ### License
 
