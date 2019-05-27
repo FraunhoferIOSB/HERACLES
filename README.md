@@ -32,7 +32,7 @@ The ontology pictures shall enhance the readers’ comprehensibility about the r
 The ontology has been published or referenced in the following conferences or magazines:
  - Moßgraber, J.; Paraskevi, P.; Padeletti, G. - An ontology for protecting Cultural Heritage against Climate Change. EGU General Assembly 2018, Vol. 20, EGU2018-13463, 2018.
  - Moßgraber, J.; Hellmund, T.; van der Schaaf, H.; Montesperelli, G.; Curulli, A.; Padeletti, G. - Modelling the domain of Cultural heritage-materials in relation to climate change. European Materials Research Society Spring Meeting and Exhibit, Straßburg, France, 2018.
- - Moßgraber, J; Hilbring, D.; Hellmund, T.; Pouli, P.; Padeletti, G. - An Ontology for Cultural Heritage Protection against Climate Change. The Twelfth International Conference on Advances in Semantic Processing, Athens, Greece, 2018. *This publication received the best paper award of the SemaPro Conference 2018.*
+ - Moßgraber, J; Hilbring, D.; Hellmund, T.; Pouli, P.; Padeletti, G. - An Ontology for Cultural Heritage Protection against Climate Change. The Twelfth International Conference on Advances in Semantic Processing, Athens, Greece, 2018. *This publication received the best paper award of the SemaPro Conference 2018.* Available [here](https://www.thinkmind.org/index.php?view=instance&instance=SEMAPRO+2018).
  - Hellmund, T.; Hertweck, P.; Hilbring, D.; Moßgraber, J.; Alexandrakis, G.; Pouli, P.; Siatou, A.; Padeletti, G. - Introducing the HERACLES Ontology - Semantics for Cultural Heritage Management. Heritage 2018, Volume 1, Issue 2, 377-391, December 2018. Available [here](https://doi.org/10.3390/heritage1020026).
 
 ### Contact
