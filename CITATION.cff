@@ -1,0 +1,17 @@
+
+@Article{heritage1020026,
+AUTHOR = {Hellmund, Tobias and Hertweck, Philipp and Hilbring, Désirée and Mossgraber, Jürgen and Alexandrakis, George and Pouli, Paraskevi and Siatou, Amalia and Padeletti, Giuseppina},
+TITLE = {Introducing the HERACLES Ontology—Semantics for Cultural Heritage Management},
+JOURNAL = {Heritage},
+VOLUME = {1},
+YEAR = {2018},
+NUMBER = {2},
+PAGES = {377--391},
+URL = {https://www.mdpi.com/2571-9408/1/2/26},
+ISSN = {2571-9408},
+ABSTRACT = {Cultural Heritage (CH) (In the context of this paper, we consider cultural heritage built tangible cultural heritage, such as buildings or monuments.) is an important source of identity for humankind and needs to be conserved for future generations. Climate change (CC) will morph the environmental landscape, thus leading to climate stress imposed on CH. Experts from different domains, including, but not limited to, material scientists, conservators and managers of cultural heritage collaborate to find out how CC affects CH and how potentially harmful impacts can be mitigated. To find and understand correlations and effects of different factors, researchers collect and analyse vast amounts of data. Still, experts often cannot exchange or make efficient use of data since it often is unstructured, incompatible, or its plain existence is simply unknown. This article introduces means to achieve consent about available knowledge, to exploit synergy effects through the combination of available information and to provide a flexible multisource information platform in collaborative cultural heritage management projects. In the context of the European project HERACLES (HERACLES—HEritage Resilience Against CLimate Events on Site. Further information: http://www.heracles-project.eu/), an application-ontology was developed. The ontology facilitates reuse and integration of data through structuring and representing its semantics. The involvement in the HERACLES project guaranteed end-user driven development, practical results and encompassment of all domains represented in the project.},
+DOI = {10.3390/heritage1020026}
+}
+
+
+
