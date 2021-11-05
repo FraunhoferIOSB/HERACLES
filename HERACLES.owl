@@ -2508,7 +2508,7 @@ TODO: define as enum rather than as string.</rdfs:comment>
                 <rdfs:label>Hydrodynamic Model of Venetian Fortification</rdfs:label>
               </j.0:AssetRepresentation>
             </j.0:hasRepresentation>
-            <rdfs:comment>&lt;p&gt;&lt;img src="../6763/heraklion-crete-greece.jpg" alt="" width="255" height="170" /&gt;&amp;nbsp; &lt;img src="../6763/koules.jpg" alt="" width="255" height="170" /&gt;&amp;nbsp;&amp;nbsp; &lt;img src="../6763/koules2.jpg" alt="" width="287" height="170" /&gt;&lt;/p&gt;&#xD;
+            <rdfs:comment>&lt;p&gt;&lt;img src="https://heracles-kb.server.de/servlet/is/6763/heraklion-crete-greece.jpg" alt="" width="255" height="170" /&gt;&amp;nbsp; &lt;img src="https://heracles-kb.server.de/servlet/is/6763/koules.jpg" alt="" width="255" height="170" /&gt;&amp;nbsp;&amp;nbsp; &lt;img src="https://heracles-kb.server.de/servlet/is/6763/koules2.jpg" alt="" width="287" height="170" /&gt;&lt;/p&gt;&#xD;
 &lt;p&gt;The fortified enclosure of the Venetian Fortress (today Heraklion) of the 15th century, which is still preserved today, is one of the most significant monuments of its kind in the whole Mediterranean basin. Another important monument of the period is the imposing fortress of "Koules" which is dominating at the edge of the Venetian NW breakwater of the old harbour. It was built by the Venetians before the construction of the new Venetian fortification, in order to protect the pier and the port (Figure 46). It took its last shape in the years 1523-1540, replacing another construction destroyed by an earthquake. The violent waves of the sea have been constantly causing damages to its stonework and foundation, thus it has been continuously repaired.&lt;/p&gt;&#xD;
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;</rdfs:comment>
             <rdfs:label>Venetian Fortress</rdfs:label>
@@ -2570,7 +2570,7 @@ TODO: define as enum rather than as string.</rdfs:comment>
               </j.0:AssetRepresentationType>
             </j.0:isOfModelType>
             <rdfs:comment>&lt;p&gt;The regional scale modelling tools are built around nested versions of the WRF (Weather Research and Forecast) mesoscale meteorological model and of the CHIMERE (or FARM) reactive transport and dispersion models, which take atmospheric emissions and their interactions into account. The solutions can then be nested down to metric resolution with the PMSS model (Parallel Micro SWIFT SPRAY), readily applicable to the detailed description of air pollution at the local scale, and its effects on buildings fa&amp;ccedil;ades, monuments and statues. The combination of regional and local scale tools allows to include the contribution to air pollution from both distant and local emission sources (industrial, traffic, residential sectors, etc).&lt;/p&gt;&#xD;
-&lt;p&gt;&lt;img src="../5982/anthro_pressure_model.PNG" alt="" width="863" height="281" /&gt;&lt;/p&gt;</rdfs:comment>
+&lt;p&gt;&lt;img src="https://heracles-kb.server.de/servlet/is/5982/anthro_pressure_model.PNG" alt="" width="863" height="281" /&gt;&lt;/p&gt;</rdfs:comment>
             <rdfs:label>Anthropogenic pressure model</rdfs:label>
           </j.0:AssetRepresentation>
         </j.0:hasRepresentation>
@@ -2609,9 +2609,9 @@ TODO: define as enum rather than as string.</rdfs:comment>
             </j.0:isOfModelType>
             <rdfs:comment>&lt;p&gt;Repeat-pass satellite synthetic aperture radar interferometry (IFSAR) is a very effective technique for terrain and structure displacement mapping applied to structural degradation, subsidence, landslides, earthquakes and volcanic phenomena monitoring. IFSAR technique measures terrain displacements with millimetre accuracy, processing data acquired from satellites orbiting over 500 kilometres above the Earth, equipped with SAR sensors.&lt;/p&gt;&#xD;
 &lt;p&gt;The picture below shows exemplary recognizable topographic signatures, an urban area on top left, and a water body in the middle.&lt;/p&gt;&#xD;
-&lt;p&gt;&lt;img src="../5857/Interferiometry.bmp" alt="" width="227" height="227" /&gt;&lt;/p&gt;&#xD;
+&lt;p&gt;&lt;img src="https://heracles-kb.server.de/servlet/is/5857/Interferiometry.bmp" alt="" width="227" height="227" /&gt;&lt;/p&gt;&#xD;
 &lt;p&gt;The following pictures show output examples from SAR data processing (left: World Trade Center Beijing (China), right: Piana degli Albanesi Dams, Sicily (Italy))&lt;/p&gt;&#xD;
-&lt;p&gt;&lt;img src="../5857/3D%20Model1.bmp" alt="" width="370" height="216" /&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;img src="../5857/3DModel2.bmp" alt="" width="359" height="216" /&gt;&lt;/p&gt;</rdfs:comment>
+&lt;p&gt;&lt;img src="https://heracles-kb.server.de/servlet/is/5857/3D%20Model1.bmp" alt="" width="370" height="216" /&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;img src="https://heracles-kb.server.de/servlet/is/5857/3DModel2.bmp" alt="" width="359" height="216" /&gt;&lt;/p&gt;</rdfs:comment>
             <rdfs:label>SAR Interferometry for structural analysis</rdfs:label>
           </j.0:AssetRepresentation>
         </j.0:hasRepresentation>
@@ -2622,7 +2622,7 @@ TODO: define as enum rather than as string.</rdfs:comment>
             <j.0:isOfModelType rdf:resource="StructuralModel"/>
             <rdfs:comment>&lt;p&gt;Structural monitoring by inverse velocity techniques deals with the monitoring and forecasting of structural failures in civil infrastructures (in our case, cultural heritage structures) based on a landslide prediction algorithm. The algorithm is the result of the observation of small landslides recreated in prototype form in a laboratory setting which led to the recognition that, when plotting the inverse velocity versus time, the values of inverse velocity approached zero, as the velocity of surface displacement increased towards final slope failure.&lt;/p&gt;&#xD;
 &lt;p&gt;The picture below shows the predicted landslide time to failure.&lt;/p&gt;&#xD;
-&lt;p&gt;&lt;img src="../5860/inverseVelocity%201.bmp" alt="" width="482" height="227" /&gt;&lt;/p&gt;</rdfs:comment>
+&lt;p&gt;&lt;img src="https://heracles-kb.server.de/servlet/is/5860/inverseVelocity%201.bmp" alt="" width="482" height="227" /&gt;&lt;/p&gt;</rdfs:comment>
             <rdfs:label>Structural monitoring by inverse velocity techniques</rdfs:label>
           </j.0:AssetRepresentation>
         </j.0:hasRepresentation>
@@ -2649,7 +2649,7 @@ TODO: define as enum rather than as string.</rdfs:comment>
           </j.0:VisitorNumbers>
         </j.0:hasChProperty>
         <rdfs:label>Gubbio Town Walls</rdfs:label>
-        <rdfs:comment>&lt;p&gt;&lt;img src="../5545/gubbio1.jpg" alt="" height="193" /&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;img src="../5545/gubbio2.jpg" alt="" height="193" /&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;img src="../5545/gubbiowall.jpg" alt="" height="193" /&gt;&lt;/p&gt;&#xD;
+        <rdfs:comment>&lt;p&gt;&lt;img src="https://heracles-kb.server.de/servlet/is/5545/gubbio1.jpg" alt="" height="193" /&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;img src="https://heracles-kb.server.de/servlet/is/5545/gubbio2.jpg" alt="" height="193" /&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;img src="https://heracles-kb.server.de/servlet/is/5545/gubbiowall.jpg" alt="" height="193" /&gt;&lt;/p&gt;&#xD;
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;&#xD;
 &lt;p&gt;The Town Walls were built to protect the city against invasions, sieges and enemies raids over two thousand years, continuously modified through elevations, renovations, expansions, reinforcements, modifications and demolitions, too. The part of the urban Walls exposed to the maximum risk is located on the slopes of Ingino Mountain in N/NE direction and were built before 1302. Nowadays, the area is mostly interested by olive plantations, while in the past was also used by wood-cutters and farmers. The area inside the Walls was used as military bastions (such as the &amp;ldquo;Cassero&amp;rdquo;) until the XVI Century, after which it has been mostly used for farming uses.&lt;/p&gt;</rdfs:comment>
         <j.0:hasChProperty>
@@ -2696,7 +2696,7 @@ TODO: define as enum rather than as string.</rdfs:comment>
     <rdfs:comment>&lt;p&gt;Aprox. 80 mts affected.&lt;/p&gt;&#xD;
 &lt;p&gt;The Cassero area is located in: N 43.354227, E 12.581295.&lt;/p&gt;&#xD;
 &lt;p&gt;The picture shows fallen walls after the removal of collapsed material.&lt;/p&gt;&#xD;
-&lt;p&gt;&lt;img src="../5586/fallen%20walls_cassero.PNG" width="502" height="366" /&gt;&lt;/p&gt;</rdfs:comment>
+&lt;p&gt;&lt;img src="https://heracles-kb.server.de/servlet/is/5586/fallen%20walls_cassero.PNG" width="502" height="366" /&gt;&lt;/p&gt;</rdfs:comment>
     <rdfs:label>Fallen walls in zone 2 </rdfs:label>
   </j.0:Damage>
   <j.0:Sensor rdf:about="DewpointSensorLGIR">
@@ -2864,7 +2864,7 @@ TODO: define as enum rather than as string.</rdfs:comment>
           <j.0:DamageType rdf:about="erosion">
             <j.0:instanceDisplayName>erosion</j.0:instanceDisplayName>
             <j.0:instanceUniqueName>erosion</j.0:instanceUniqueName>
-            <rdfs:comment>&lt;p&gt;&lt;img src="../1217/errosion.png?command=downloadContent&amp;amp;filename=errosion.png" alt="" width="247" height="162" /&gt;&lt;/p&gt;
+            <rdfs:comment>&lt;p&gt;&lt;img src="https://heracles-kb.server.de/servlet/is/1217/errosion.png?command=downloadContent&amp;amp;filename=errosion.png" alt="" width="247" height="162" /&gt;&lt;/p&gt;
 &lt;p&gt;[Source: WP4 - errosion due to rainfall and degradation of mortars of the Town Walls]&lt;/p&gt;
 &lt;p&gt;The fact of soil, stone, etc. being gradually damaged and removed by the waves, rain, or wind.&lt;/p&gt;
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;</rdfs:comment>
@@ -3035,7 +3035,7 @@ TODO: define as enum rather than as string.</rdfs:comment>
     <j.0:instanceDisplayName>Risk management</j.0:instanceDisplayName>
     <j.0:instanceUniqueName>RiskManagement</j.0:instanceUniqueName>
     <rdfs:comment>&lt;p&gt;The main, starting workflow is named &amp;ldquo;Risk management&amp;rdquo; and is depicted in the figure below. The Risk management workflow starts with three events, which correspond to two risk management scenarios. The first scenario starts with the requirement to run CC models, while the second scenario has two variants: first when the threat is identified during the monitoring and the second when the threat assessment is performed on-demand.&lt;/p&gt;&#xD;
-&lt;p&gt;&lt;img src="../7717/Risk%20Management.png" alt="" width="861" height="359" /&gt;&lt;/p&gt;</rdfs:comment>
+&lt;p&gt;&lt;img src="https://heracles-kb.server.de/servlet/is/7717/Risk%20Management.png" alt="" width="861" height="359" /&gt;&lt;/p&gt;</rdfs:comment>
     <rdfs:label>Risk management</rdfs:label>
   </j.0:SOP>
   <j.0:Vulnerability rdf:about="preferredURI">
@@ -3121,11 +3121,11 @@ TODO: define as enum rather than as string.</rdfs:comment>
             <j.0:instanceUniqueName>3D_Model_Knossos_Palace</j.0:instanceUniqueName>
             <rdfs:comment>&lt;p&gt;The 3D Model was generated by E-Geos in the context of the HERACLES project. It can be accessed under: &lt;a href="https://lab.egeos-services.it/apps/models/knossos_full.html" target="_blank" rel="noopener"&gt;https://lab.egeos-services.it/apps/models/knossos_full.html&lt;/a&gt;&lt;/p&gt;&#xD;
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;&#xD;
-&lt;p&gt;&lt;img src="../8754/3dModel_KN.jpg" alt="" width="587" height="300" /&gt;&lt;/p&gt;</rdfs:comment>
+&lt;p&gt;&lt;img src="https://heracles-kb.server.de/servlet/is/8754/3dModel_KN.jpg" alt="" width="587" height="300" /&gt;&lt;/p&gt;</rdfs:comment>
             <rdfs:label>3D Model of the Knossos Palace</rdfs:label>
           </j.0:AssetRepresentation>
         </j.0:hasRepresentation>
-        <rdfs:comment>&lt;p&gt;&lt;img src="../6755/knossos1.jpg" alt="" width="341" height="169" /&gt;&amp;nbsp; &lt;img src="../6755/knossos2.jpg" alt="" width="230" height="169" /&gt;&amp;nbsp; &lt;img src="../6755/knossos3.jpg" alt="" width="252" height="169" /&gt;&lt;/p&gt;&#xD;
+        <rdfs:comment>&lt;p&gt;&lt;img src="https://heracles-kb.server.de/servlet/is/6755/knossos1.jpg" alt="" width="341" height="169" /&gt;&amp;nbsp; &lt;img src="https://heracles-kb.server.de/servlet/is/6755/knossos2.jpg" alt="" width="230" height="169" /&gt;&amp;nbsp; &lt;img src="https://heracles-kb.server.de/servlet/is/6755/knossos3.jpg" alt="" width="252" height="169" /&gt;&lt;/p&gt;&#xD;
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;&#xD;
 &lt;p&gt;The Minoan Palace of Knossos bears unique testimony to the Minoan civilization, which was arguably considered as the first centrally organized civilization to flourish in Europe and amongst the first civilizations worldwide. It is also unique because of its continuous habitation from the Neolithic (7000-3000 B.C.) to the Mycenaean Age, while the city of Knossos continued to be an important city-state down to the Hellenistic era, the period of the Roman Empire and the early Byzantine period. The first palace was built circa 1900 BC. From the few parts of it that survive (&amp;ldquo;Magazine of the Giant Pithoi&amp;rdquo;, etc.), it seems that its basic layout was set out in sectors around the great &amp;ldquo;Central Court&amp;rdquo;. The first palace was destroyed around 1700 BC and the new one was erected in its place.&lt;/p&gt;&#xD;
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;</rdfs:comment>
@@ -3153,7 +3153,7 @@ TODO: define as enum rather than as string.</rdfs:comment>
         <rdfs:comment>&lt;p&gt;Crystallisation and dissolution of salts is caused by wetting and drying. Repeated christalysation and dissoultion cycles affect already porous materials affecting standing structures, archaeology, wall paintings, frescos and other decorated surfaces.&lt;/p&gt;&#xD;
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;&#xD;
 &lt;p&gt;The pictures a and b show crusts of salt and black encrustations on walls of the Koules Fortress.&lt;/p&gt;&#xD;
-&lt;p&gt;&lt;img src="../6426/Salt%20crusts.PNG" width="679" height="238" /&gt;&lt;/p&gt;</rdfs:comment>
+&lt;p&gt;&lt;img src="https://heracles-kb.server.de/servlet/is/6426/Salt%20crusts.PNG" width="679" height="238" /&gt;&lt;/p&gt;</rdfs:comment>
         <rdfs:label>salt accumulation</rdfs:label>
       </j.0:DamageType>
     </j.0:riskCausesDamage>
@@ -3197,7 +3197,7 @@ TODO: define as enum rather than as string.</rdfs:comment>
         <rdfs:comment>&lt;p&gt;The graph below shows the result of CVR1's diffraction spectrography.&lt;/p&gt;&#xD;
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;&#xD;
 &lt;p&gt;CVR 1 is a mortar for stone or brick masonry grouting (more traditional product).&lt;/p&gt;&#xD;
-&lt;p&gt;&lt;img src="../6520/CVR1.png" width="531" height="230" /&gt;&lt;/p&gt;</rdfs:comment>
+&lt;p&gt;&lt;img src="https://heracles-kb.server.de/servlet/is/6520/CVR1.png" width="531" height="230" /&gt;&lt;/p&gt;</rdfs:comment>
         <rdfs:label>CVR1</rdfs:label>
       </j.0:Material>
     </j.0:Analyzes>
@@ -3221,7 +3221,7 @@ TODO: define as enum rather than as string.</rdfs:comment>
         <j.0:materialHasPurpose rdf:resource="Consolidant"/>
         <rdfs:comment>&lt;p&gt;CVR4 is a natural lime-based mortar designed to carry out restoration work for historic buildings with a specific care for natural products.&lt;/p&gt;&#xD;
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;&#xD;
-&lt;p&gt;&lt;img src="../6527/CVR4.png" alt="" width="531" height="202" /&gt;&lt;/p&gt;</rdfs:comment>
+&lt;p&gt;&lt;img src="https://heracles-kb.server.de/servlet/is/6527/CVR4.png" alt="" width="531" height="202" /&gt;&lt;/p&gt;</rdfs:comment>
         <rdfs:label>CVR4</rdfs:label>
       </j.0:Material>
     </j.0:Analyzes>
@@ -3242,10 +3242,10 @@ TODO: define as enum rather than as string.</rdfs:comment>
                     <j.0:instanceUniqueName>Risk Assessment</j.0:instanceUniqueName>
                     <rdfs:comment>&lt;p&gt;The figure shows the risk assessment workflow. It starts with experts receive a request for risk assessment, following with two parallel processes: vulnerability and exposure assessment. They assess the risk and create a report combining vulnerability and exposure results and CH data. Following their notification either the site or project manager starts with the analysis of the report, updates the CH data in the database and asks for mitigation process.&lt;/p&gt;&#xD;
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;&#xD;
-&lt;p&gt;&lt;img src="../7723/Risk%20Assess.png" alt="" width="774" height="623" /&gt;&lt;/p&gt;&#xD;
+&lt;p&gt;&lt;img src="https://heracles-kb.server.de/servlet/is/7723/Risk%20Assess.png" alt="" width="774" height="623" /&gt;&lt;/p&gt;&#xD;
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;&#xD;
 &lt;p&gt;The risk assessment matrix for the risk estimation step is shown in the matrix below.&lt;/p&gt;&#xD;
-&lt;p&gt;&lt;img src="../7723/RiskAssessmentMatrix.PNG" width="534" height="385" /&gt;&lt;/p&gt;</rdfs:comment>
+&lt;p&gt;&lt;img src="https://heracles-kb.server.de/servlet/is/7723/RiskAssessmentMatrix.PNG" width="534" height="385" /&gt;&lt;/p&gt;</rdfs:comment>
                     <rdfs:label>RiskAssessment</rdfs:label>
                   </j.0:SOP>
                 </j.0:investigatedThroughWF>
@@ -3259,7 +3259,7 @@ TODO: define as enum rather than as string.</rdfs:comment>
                   </j.0:AssetRepresentation>
                 </j.0:hasRepresentation>
                 <j.0:text>The Consoli Palace was built between 1332 and 1349. The Palace has a rectangular shape, and a very articulated  distribution of volumes divided into 9 levels. The main façade overlooking the square is made of ashlar stone and it stands for over 44 meters up to the top of the bell tower. The entryway is through a fan-shaped staircase leading to the “Arengo”. This hall has two mullioned windows positioned on the two sides of the Gothic style portal, decorated with a XVI-century fresco in the lunette. In the main floor, six windows with round centre in pairs, divided by pillars, are present, while the battlement is supported by small pointed arches.</j.0:text>
-                <rdfs:comment>&lt;p&gt;&lt;img src="../6737/gubbio_high_town.jpg" alt="" height="190" /&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;img src="../6737/GubbioPalace1.jpg" alt="" height="190" /&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;img src="../6737/GubbioPalace2.JPG" alt="" height="190" /&gt;&lt;/p&gt;&#xD;
+                <rdfs:comment>&lt;p&gt;&lt;img src="https://heracles-kb.server.de/servlet/is/6737/gubbio_high_town.jpg" alt="" height="190" /&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;img src="https://heracles-kb.server.de/servlet/is/6737/GubbioPalace1.jpg" alt="" height="190" /&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;img src="https://heracles-kb.server.de/servlet/is/6737/GubbioPalace2.JPG" alt="" height="190" /&gt;&lt;/p&gt;&#xD;
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;&#xD;
 &lt;p&gt;The Consoli Palace was built between 1332 and 1349. The Palace has a rectangular shape, and a very articulated distribution of volumes divided into 9 levels. The main fa&amp;ccedil;ade overlooking the square is made of ashlar stone and it stands for over 44 meters up to the top of the bell tower. The entryway is through a fan-shaped staircase leading to the &amp;ldquo;Arengo&amp;rdquo;. This hall has two mullioned windows positioned on the two sides of the Gothic style portal, decorated with a XVI-century fresco in the lunette. In the main floor, six windows with round centre in pairs, divided by pillars, are present, while the battlement is supported by small pointed arches.&lt;/p&gt;</rdfs:comment>
                 <j.0:hasRepresentation rdf:resource="AnthropogenicPressureModel"/>
@@ -3284,7 +3284,7 @@ TODO: define as enum rather than as string.</rdfs:comment>
 &lt;p&gt;&lt;a href="https://lab.egeos-services.it/apps/models/ConsoliPalace.html" target="_blank" rel="noopener"&gt;https://lab.egeos-services.it/apps/models/ConsoliPalace.html&lt;/a&gt;&lt;/p&gt;&#xD;
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;&#xD;
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;&#xD;
-&lt;p&gt;&amp;nbsp;&lt;img src="../8749/3dModel.jpg" alt="" width="318" height="397" /&gt;&lt;/p&gt;</rdfs:comment>
+&lt;p&gt;&amp;nbsp;&lt;img src="https://heracles-kb.server.de/servlet/is/8749/3dModel.jpg" alt="" width="318" height="397" /&gt;&lt;/p&gt;</rdfs:comment>
                     <rdfs:label>3D Model of the Consoli Palace</rdfs:label>
                   </j.0:AssetRepresentation>
                 </j.0:hasRepresentation>
@@ -3294,7 +3294,7 @@ TODO: define as enum rather than as string.</rdfs:comment>
                     <j.0:instanceUniqueName>ExposureAssessment</j.0:instanceUniqueName>
                     <rdfs:comment>&lt;p&gt;The first activity is to collect actual data on CH asset&amp;rsquo;s values regarding both economic and social importance. The next step is calculation the exposure.&lt;/p&gt;&#xD;
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;&#xD;
-&lt;p&gt;&lt;img src="../7722/Exp%20Assess.png" alt="" width="736" height="352" /&gt;&lt;/p&gt;</rdfs:comment>
+&lt;p&gt;&lt;img src="https://heracles-kb.server.de/servlet/is/7722/Exp%20Assess.png" alt="" width="736" height="352" /&gt;&lt;/p&gt;</rdfs:comment>
                     <rdfs:label>Exposure Assessment</rdfs:label>
                   </j.0:SOP>
                 </j.0:investigatedThroughWF>
@@ -3306,9 +3306,9 @@ TODO: define as enum rather than as string.</rdfs:comment>
                     <j.0:instanceUniqueName>VulnerabilityAssessment</j.0:instanceUniqueName>
                     <rdfs:comment>&lt;p&gt;The vulnerability assessment workflow is estimating for the identified hazards separately using CH asset characteristics and predefined table following by an overall calculation of the vulnerability using a predefined function.&lt;/p&gt;&#xD;
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;&#xD;
-&lt;p&gt;&lt;img src="../7721/Vuln%20assess.png" alt="" width="722" height="354" /&gt;&lt;/p&gt;&#xD;
+&lt;p&gt;&lt;img src="https://heracles-kb.server.de/servlet/is/7721/Vuln%20assess.png" alt="" width="722" height="354" /&gt;&lt;/p&gt;&#xD;
 &lt;p&gt;The matrix for estimating the vulnerability is shown below.&lt;/p&gt;&#xD;
-&lt;p&gt;&lt;img src="../7721/VulnerabilityMatrix.PNG" alt="" width="749" height="154" /&gt;&lt;/p&gt;</rdfs:comment>
+&lt;p&gt;&lt;img src="https://heracles-kb.server.de/servlet/is/7721/VulnerabilityMatrix.PNG" alt="" width="749" height="154" /&gt;&lt;/p&gt;</rdfs:comment>
                     <rdfs:label>Vulnerability Assessment</rdfs:label>
                   </j.0:SOP>
                 </j.0:investigatedThroughWF>
@@ -3318,7 +3318,7 @@ TODO: define as enum rather than as string.</rdfs:comment>
                     <j.0:instanceUniqueName>FiniteElementModelsForStructuralAnalysis</j.0:instanceUniqueName>
                     <rdfs:comment>&lt;p&gt;The structural behaviour of a building can be studied by the Finite Element Method (FEM), as widely used by the scientific community. More specifically, FEM models allow to predict the response of a structure under prescribed static (e.g. dead load and self-weight) or dynamic (e.g. earthquake, wind) loading conditions, or under imposed displacements at the boundaries (e.g. subsoil movements and settling of foundations). In the modelling process, the calibration of the numerical model plays a fundamental role in order to obtain reliable results. The picture below shows some numerical models of historical constructions developed by the UNIPG research team.&lt;/p&gt;&#xD;
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;&#xD;
-&lt;p&gt;&lt;img src="../5859/FEM_Consoli%20Palace.png" alt="" width="286" height="298" /&gt;&lt;/p&gt;</rdfs:comment>
+&lt;p&gt;&lt;img src="https://heracles-kb.server.de/servlet/is/5859/FEM_Consoli%20Palace.png" alt="" width="286" height="298" /&gt;&lt;/p&gt;</rdfs:comment>
                     <rdfs:label>Finite Element Models for structural analysis</rdfs:label>
                   </j.0:AssetRepresentation>
                 </j.0:hasRepresentation>
@@ -3328,10 +3328,10 @@ TODO: define as enum rather than as string.</rdfs:comment>
                     <j.0:instanceUniqueName>ThreatAssessment</j.0:instanceUniqueName>
                     <rdfs:comment>&lt;p&gt;The set of activities related to the &amp;ldquo;Threat assessment&amp;rdquo; (see figure) includes assessment of CH material and/or structural health as well as identification of other possible CC induced hazards (for. ex. landslides, extreme precipitations, etc.). The threat assessment can be performed on-demand or as follow-up procedure if the threat is identified during the monitoring. The results of the comprehensive analysis are delivered to a site manager for the decision on whether to proceed with risk assessment and mitigation activities. Generally, if the threat (hazard) is above the acceptable level (likelihood) than risk assessment procedure is performed. However, it is expected that frameworks for threat assessment will be developed for each CH asset or site based on their characteristics and particular environment.&lt;/p&gt;&#xD;
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;&#xD;
-&lt;p&gt;&lt;img src="../7719/Threat_assess.png" alt="" width="770" height="508" /&gt;&lt;/p&gt;&#xD;
+&lt;p&gt;&lt;img src="https://heracles-kb.server.de/servlet/is/7719/Threat_assess.png" alt="" width="770" height="508" /&gt;&lt;/p&gt;&#xD;
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;&#xD;
 &lt;p&gt;The Risk Matrix for the decision step, if the threat is considered as significant or not, is shown below.&lt;/p&gt;&#xD;
-&lt;p&gt;&lt;img src="../7719/RiskMatrix.PNG" alt="" width="657" height="323" /&gt;&lt;/p&gt;</rdfs:comment>
+&lt;p&gt;&lt;img src="https://heracles-kb.server.de/servlet/is/7719/RiskMatrix.PNG" alt="" width="657" height="323" /&gt;&lt;/p&gt;</rdfs:comment>
                     <rdfs:label>ThreatAssessment</rdfs:label>
                   </j.0:SOP>
                 </j.0:investigatedThroughWF>
@@ -3339,11 +3339,11 @@ TODO: define as enum rather than as string.</rdfs:comment>
               </j.0:Building>
             </j.0:chElementIn>
             <rdfs:comment>&lt;p&gt;The following pictures shows from where the sample has been taken.&lt;/p&gt;&#xD;
-&lt;p&gt;&lt;img src="../6805/Locality_mortar%20inside%20gubbio%20palace.png" alt="" height="200" /&gt;&lt;/p&gt;&#xD;
+&lt;p&gt;&lt;img src="https://heracles-kb.server.de/servlet/is/6805/Locality_mortar%20inside%20gubbio%20palace.png" alt="" height="200" /&gt;&lt;/p&gt;&#xD;
 &lt;p&gt;The corridor - "caminata" - and its location within the palace are shown in the two following pictures.&lt;/p&gt;&#xD;
-&lt;p&gt;&lt;img src="../6805/Locality_mortar%20inside%20gubbio%20palace%202.png.jpg" alt="" height="400" /&gt;&lt;/p&gt;&#xD;
+&lt;p&gt;&lt;img src="https://heracles-kb.server.de/servlet/is/6805/Locality_mortar%20inside%20gubbio%20palace%202.png.jpg" alt="" height="400" /&gt;&lt;/p&gt;&#xD;
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;&#xD;
-&lt;p&gt;&lt;img src="../6805/Mortar%20inside%20consoli%20room.png" alt="" height="300" /&gt;&lt;/p&gt;&#xD;
+&lt;p&gt;&lt;img src="https://heracles-kb.server.de/servlet/is/6805/Mortar%20inside%20consoli%20room.png" alt="" height="300" /&gt;&lt;/p&gt;&#xD;
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;</rdfs:comment>
             <rdfs:label>Consoli Palace Internal Room</rdfs:label>
           </j.0:culturalHertiageElement>
@@ -3421,7 +3421,7 @@ TODO: define as enum rather than as string.</rdfs:comment>
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;&#xD;
 &lt;p&gt;Below the diffraction spectrography of CVR2 is depicted.&lt;/p&gt;&#xD;
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;&#xD;
-&lt;p&gt;&lt;img src="../6522/CVR2.png" alt="" width="522" height="230" /&gt;&lt;/p&gt;</rdfs:comment>
+&lt;p&gt;&lt;img src="https://heracles-kb.server.de/servlet/is/6522/CVR2.png" alt="" width="522" height="230" /&gt;&lt;/p&gt;</rdfs:comment>
         <rdfs:label>CVR2</rdfs:label>
       </j.0:Material>
     </j.0:Analyzes>
@@ -3455,7 +3455,7 @@ TODO: define as enum rather than as string.</rdfs:comment>
     <j.0:instanceUniqueName>KnossosMeteo</j.0:instanceUniqueName>
     <rdfs:comment>&lt;p&gt;The meteo station monitors the climate conditions around the palace of Knossos.&lt;/p&gt;&#xD;
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;&#xD;
-&lt;p&gt;&lt;img src="../8106/knossos_meteo.jpg?command=downloadContent&amp;amp;filename=knossos_meteo.jpg" alt="" width="372" height="496" /&gt;&lt;/p&gt;</rdfs:comment>
+&lt;p&gt;&lt;img src="https://heracles-kb.server.de/servlet/is/8106/knossos_meteo.jpg?command=downloadContent&amp;amp;filename=knossos_meteo.jpg" alt="" width="372" height="496" /&gt;&lt;/p&gt;</rdfs:comment>
     <j.0:inSitu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
     >on</j.0:inSitu>
     <rdfs:label>Knossos Local Meteo Station Network</rdfs:label>
@@ -3628,7 +3628,7 @@ TODO: define as enum rather than as string.</rdfs:comment>
       </j.0:Sensor>
     </j.0:isMeasuredWith>
     <rdfs:comment>&lt;p&gt;The crack in the hall is observed through a combined sensor system, combining an LVDT and a thermometer.&lt;/p&gt;&#xD;
-&lt;p&gt;&lt;img src="../8432/VDT%20and%20Temperature%20Sensor.jpg" alt="" width="652" height="363" /&gt;&lt;/p&gt;</rdfs:comment>
+&lt;p&gt;&lt;img src="https://heracles-kb.server.de/servlet/is/8432/VDT%20and%20Temperature%20Sensor.jpg" alt="" width="652" height="363" /&gt;&lt;/p&gt;</rdfs:comment>
     <j.0:observes rdf:resource="ConsoliPalace"/>
     <j.0:instanceUniqueName>Combined LVDT and temperature measurement</j.0:instanceUniqueName>
     <j.0:measurementEndpoint rdf:resource="endpoint_Temperature_LVDT"/>
@@ -3641,7 +3641,7 @@ TODO: define as enum rather than as string.</rdfs:comment>
         <j.0:isOfDamageType rdf:resource="cracking"/>
         <rdfs:comment>&lt;p&gt;The crack pattern in the consoli palace cross hall is observed through GPR measurements and a combined measurement of temperature and crack width.&lt;/p&gt;&#xD;
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;&#xD;
-&lt;p&gt;&lt;img src="../8428/Crack%20Pattern%20Loggia.jpg" alt="" width="306" height="373" /&gt;&lt;/p&gt;</rdfs:comment>
+&lt;p&gt;&lt;img src="https://heracles-kb.server.de/servlet/is/8428/Crack%20Pattern%20Loggia.jpg" alt="" width="306" height="373" /&gt;&lt;/p&gt;</rdfs:comment>
         <rdfs:label>Crack Pattern Consoli Palace Cross Hall</rdfs:label>
       </j.0:Damage>
     </j.0:mitigates>
@@ -3785,8 +3785,8 @@ TODO: define as enum rather than as string.</rdfs:comment>
     </j.0:materialHasPurpose>
     <rdfs:comment>&lt;p&gt;&lt;strong&gt;GTW10: &lt;/strong&gt;Ancient stone.&lt;/p&gt;&#xD;
 &lt;p&gt;Natural stone. Biomicritic limestone (wackestone for Dunham, 1962; Embry and Klovan, 1971), brown in plane-polarized light, containing planktonic foraminifera (Globigerinids and Globotruncanids) (from &amp;ldquo;Scaglia Rossa&amp;rdquo; formation) and rare opaques and iron hydroxides (pictures below, top left). The rock is crosscut by thin veins filled with microsparitic and sparite calcite (pictures below, top right). Below the exposed surface, a discontinuous, 0.3&amp;divide;0.4 mm thick layer shows signs of endolithic hyphal colonization (pictures below, lower left).&lt;/p&gt;&#xD;
-&lt;p&gt;&amp;nbsp;&lt;img src="../6859/GTW10%20Fig%2038%20petro.jpg" width="322" height="231" /&gt; &lt;img src="../6859/GTW10%20Fig%2039%20Petro.jpg" width="321" height="230" /&gt;&lt;/p&gt;&#xD;
-&lt;p&gt;&amp;nbsp;&lt;img src="../6859/GTW10%20Fig%2040%20Petro.jpg" width="322" height="268" /&gt;&amp;nbsp;&lt;/p&gt;</rdfs:comment>
+&lt;p&gt;&amp;nbsp;&lt;img src="https://heracles-kb.server.de/servlet/is/6859/GTW10%20Fig%2038%20petro.jpg" width="322" height="231" /&gt; &lt;img src="https://heracles-kb.server.de/servlet/is/6859/GTW10%20Fig%2039%20Petro.jpg" width="321" height="230" /&gt;&lt;/p&gt;&#xD;
+&lt;p&gt;&amp;nbsp;&lt;img src="https://heracles-kb.server.de/servlet/is/6859/GTW10%20Fig%2040%20Petro.jpg" width="322" height="268" /&gt;&amp;nbsp;&lt;/p&gt;</rdfs:comment>
     <rdfs:label>GTW10</rdfs:label>
   </j.0:Material>
   <j.0:Person rdf:about="VasilikiSythiakaki">
@@ -3854,7 +3854,7 @@ TODO: define as enum rather than as string.</rdfs:comment>
     <j.0:instanceDisplayName>CH Health Analysis</j.0:instanceDisplayName>
     <j.0:instanceUniqueName>healthAnalysisCH</j.0:instanceUniqueName>
     <rdfs:comment>&lt;p&gt;The figure shows the sub-process &amp;ldquo;CH health analysis&amp;rdquo;, which is related to the material and structural health of the CH asset. These two characteristics contribute to the judgment on whether the threat is significant or not. However, poor CH asset&amp;rsquo;s health influences vulnerability and contributes to the exploitation of the vulnerability by threat. During the CH health analysis in situ diagnostic protocols and systematic protocols related to the diagnostic and analytical strategies (developed in WP3) stored in knowledge base are to be deployed.&lt;/p&gt;&#xD;
-&lt;p&gt;&lt;img src="../7720/CHHealth1.png" alt="" width="853" height="461" /&gt;&lt;/p&gt;</rdfs:comment>
+&lt;p&gt;&lt;img src="https://heracles-kb.server.de/servlet/is/7720/CHHealth1.png" alt="" width="853" height="461" /&gt;&lt;/p&gt;</rdfs:comment>
     <rdfs:label>CH Health Analysis</rdfs:label>
   </j.0:SOP>
   <j.0:Sensor rdf:about="MicroclimaticSensorHeraklionPort">
@@ -4067,14 +4067,14 @@ TODO: define as enum rather than as string.</rdfs:comment>
     <j.0:instanceDisplayName>Risk Mitigation</j.0:instanceDisplayName>
     <j.0:instanceUniqueName>RiskMitigation</j.0:instanceUniqueName>
     <rdfs:comment>&lt;p&gt;The mitigation process starts with setting the preparation of the mitigation plan and request for the expert consultancy. Experts propose solutions based on risk analysis&amp;rsquo;s report and CH asset characteristics. Having consultancy report ether site or project manager leads preparation of the mitigation plan.&lt;/p&gt;&#xD;
-&lt;p&gt;&lt;img src="../7724/Risk%20Mit.png" alt="" width="812" height="503" /&gt;&lt;/p&gt;</rdfs:comment>
+&lt;p&gt;&lt;img src="https://heracles-kb.server.de/servlet/is/7724/Risk%20Mit.png" alt="" width="812" height="503" /&gt;&lt;/p&gt;</rdfs:comment>
     <rdfs:label>Risk Mitigation</rdfs:label>
   </j.0:SOP>
   <j.0:DataSet rdf:about="AirTempKoulesMeteoStation">
     <j.0:hasMeasurementsOf rdf:resource="Temperature"/>
     <j.0:isProducedBySensor>
       <j.0:Sensor rdf:about="ThermometerKoulesMeteoStation">
-        <rdfs:comment>&lt;p&gt;&lt;img src="../5343/meterological%20station%20koules.PNG" alt="" width="348" height="512" /&gt;&lt;/p&gt;</rdfs:comment>
+        <rdfs:comment>&lt;p&gt;&lt;img src="https://heracles-kb.server.de/servlet/is/5343/meterological%20station%20koules.PNG" alt="" width="348" height="512" /&gt;&lt;/p&gt;</rdfs:comment>
         <j.0:isHumanInterpretable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
         >on</j.0:isHumanInterpretable>
         <j.0:instanceDisplayName>Thermometer of the Koules meteo station</j.0:instanceDisplayName>
@@ -4533,7 +4533,7 @@ TODO: define as enum rather than as string.</rdfs:comment>
       </j.0:ServiceEndpoint>
     </j.0:measurementEndpoint>
     <rdfs:comment>&lt;p&gt;The crack in the hall is observed through a combined sensor system, combining an LVDT and a thermometer.&lt;/p&gt;&#xD;
-&lt;p&gt;&lt;img src="../8437/VDT%20and%20Temperature%20Sensor.jpg" alt="" width="694" height="386" /&gt;&lt;/p&gt;</rdfs:comment>
+&lt;p&gt;&lt;img src="https://heracles-kb.server.de/servlet/is/8437/VDT%20and%20Temperature%20Sensor.jpg" alt="" width="694" height="386" /&gt;&lt;/p&gt;</rdfs:comment>
     <j.0:givesInformationAbout>
       <j.0:culturalHertiageElement rdf:about="GubbioPalaceLvl2MainRoom">
         <j.0:text>Figure 1 is a picture of the investigated area that is the main room at Level -2 of the Consoli Palace </j.0:text>
@@ -4542,7 +4542,7 @@ TODO: define as enum rather than as string.</rdfs:comment>
         <j.0:chElementIn rdf:resource="ConsoliPalace"/>
         <rdfs:comment>&lt;p&gt;Figure 1 is a picture of the investigated area that is the main room at Level -2 of the Consoli Palace.&lt;/p&gt;&#xD;
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;&#xD;
-&lt;p&gt;&lt;img src="../8414/FIGURE_1_ROOM.png" alt="" width="620" height="384" /&gt;&lt;/p&gt;</rdfs:comment>
+&lt;p&gt;&lt;img src="https://heracles-kb.server.de/servlet/is/8414/FIGURE_1_ROOM.png" alt="" width="620" height="384" /&gt;&lt;/p&gt;</rdfs:comment>
         <rdfs:label>Gubbio Palace Level -2 Main Room</rdfs:label>
       </j.0:culturalHertiageElement>
     </j.0:givesInformationAbout>
@@ -4933,21 +4933,21 @@ TODO: define as enum rather than as string.</rdfs:comment>
 &lt;tr&gt;&#xD;
 &lt;td style="width: 270.1px;"&gt;&#xD;
 &lt;p&gt;Damage Location:&lt;/p&gt;&#xD;
-&lt;p&gt;&lt;img src="../8609/Damage_Location.jpg" alt="" width="200" /&gt;&lt;/p&gt;&#xD;
+&lt;p&gt;&lt;img src="https://heracles-kb.server.de/servlet/is/8609/Damage_Location.jpg" alt="" width="200" /&gt;&lt;/p&gt;&#xD;
 &lt;/td&gt;&#xD;
 &lt;td style="width: 270.1px;"&gt;&#xD;
 &lt;p&gt;Sample Area:&lt;/p&gt;&#xD;
-&lt;p&gt;&lt;img src="../8609/Damage%20Sample%20Area.jpg" alt="" width="200" /&gt;&lt;/p&gt;&#xD;
+&lt;p&gt;&lt;img src="https://heracles-kb.server.de/servlet/is/8609/Damage%20Sample%20Area.jpg" alt="" width="200" /&gt;&lt;/p&gt;&#xD;
 &lt;/td&gt;&#xD;
 &lt;/tr&gt;&#xD;
 &lt;tr&gt;&#xD;
 &lt;td style="width: 270.1px;"&gt;&#xD;
 &lt;p&gt;Sample:&lt;/p&gt;&#xD;
-&lt;p&gt;&lt;img src="../8609/Sample.PNG" alt="" width="200" /&gt;&lt;/p&gt;&#xD;
+&lt;p&gt;&lt;img src="https://heracles-kb.server.de/servlet/is/8609/Sample.PNG" alt="" width="200" /&gt;&lt;/p&gt;&#xD;
 &lt;/td&gt;&#xD;
 &lt;td style="width: 270.1px;"&gt;&#xD;
 &lt;p&gt;Sample Bags:&lt;/p&gt;&#xD;
-&lt;p&gt;&lt;img src="../8609/Sample%20Bag.PNG" alt="" width="200" /&gt;&lt;/p&gt;&#xD;
+&lt;p&gt;&lt;img src="https://heracles-kb.server.de/servlet/is/8609/Sample%20Bag.PNG" alt="" width="200" /&gt;&lt;/p&gt;&#xD;
 &lt;/td&gt;&#xD;
 &lt;/tr&gt;&#xD;
 &lt;/tbody&gt;&#xD;
@@ -4965,11 +4965,11 @@ TODO: define as enum rather than as string.</rdfs:comment>
     <rdfs:comment>&lt;table style="height: 208px; width: 532px;"&gt;&#xD;
 &lt;tbody&gt;&#xD;
 &lt;tr style="height: 179.9px;"&gt;&#xD;
-&lt;td style="width: 217px; height: 179.9px;"&gt;&lt;img src="../8666/DATABASE%20D_MSI_Koules_SampleID_22_DATE_201710.jpg" alt="" width="200" /&gt;&lt;/td&gt;&#xD;
-&lt;td style="width: 299px; height: 179.9px;"&gt;&lt;img src="../8666/DATABASE%20D_MSI_Koules_SampleID_22_DATE_201710_2.jpg" alt="" width="200" /&gt;&lt;/td&gt;&#xD;
+&lt;td style="width: 217px; height: 179.9px;"&gt;&lt;img src="https://heracles-kb.server.de/servlet/is/8666/DATABASE%20D_MSI_Koules_SampleID_22_DATE_201710.jpg" alt="" width="200" /&gt;&lt;/td&gt;&#xD;
+&lt;td style="width: 299px; height: 179.9px;"&gt;&lt;img src="https://heracles-kb.server.de/servlet/is/8666/DATABASE%20D_MSI_Koules_SampleID_22_DATE_201710_2.jpg" alt="" width="200" /&gt;&lt;/td&gt;&#xD;
 &lt;/tr&gt;&#xD;
 &lt;tr style="height: 153px;"&gt;&#xD;
-&lt;td style="width: 217px; height: 153px;"&gt;&lt;img src="../8666/DATABASE%20D_MSI_Koules_SampleID_22_DATE_201710_3.jpg" alt="" width="200" /&gt;&lt;/td&gt;&#xD;
+&lt;td style="width: 217px; height: 153px;"&gt;&lt;img src="https://heracles-kb.server.de/servlet/is/8666/DATABASE%20D_MSI_Koules_SampleID_22_DATE_201710_3.jpg" alt="" width="200" /&gt;&lt;/td&gt;&#xD;
 &lt;td style="width: 299px; height: 153px;"&gt;&amp;nbsp;&lt;/td&gt;&#xD;
 &lt;/tr&gt;&#xD;
 &lt;tr style="height: 18px;"&gt;&#xD;
@@ -5086,7 +5086,7 @@ TODO: define as enum rather than as string.</rdfs:comment>
     <rdfs:comment>&lt;p&gt;By DRMS, the system can measure continuously:&lt;/p&gt;&#xD;
 &lt;p&gt;&amp;nbsp;- 1. Penetration force (Nt) versus&lt;br /&gt;&amp;nbsp;- 2. Actual drill position (&amp;mu;m/mm)&lt;br /&gt;&amp;nbsp;- 3. Rotational speed&lt;br /&gt;&amp;nbsp;- 4. Penetration rate&lt;/p&gt;&#xD;
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;&#xD;
-&lt;p&gt;&lt;img src="../6452/drilling1.png" width="210" height="141" /&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;img src="../6452/drilling2.png" width="128" height="141" /&gt;&lt;/p&gt;</rdfs:comment>
+&lt;p&gt;&lt;img src="https://heracles-kb.server.de/servlet/is/6452/drilling1.png" width="210" height="141" /&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;img src="https://heracles-kb.server.de/servlet/is/6452/drilling2.png" width="128" height="141" /&gt;&lt;/p&gt;</rdfs:comment>
     <rdfs:label>Drilling Resistance Measurement</rdfs:label>
   </j.0:MaterialDegAssessment>
   <j.0:VisitorNumbers rdf:about="KnossosVisitors2011">
@@ -5108,8 +5108,8 @@ TODO: define as enum rather than as string.</rdfs:comment>
     <rdfs:comment>&lt;table style="height: 208px; width: 532px;"&gt;&#xD;
 &lt;tbody&gt;&#xD;
 &lt;tr style="height: 179.9px;"&gt;&#xD;
-&lt;td style="width: 217px; height: 179.9px;"&gt;&amp;nbsp;&lt;img src="../8655/DATABASE%20C_LIBS_Koules_SampleID_22.jpg" alt="" width="257" height="180" /&gt;&lt;/td&gt;&#xD;
-&lt;td style="width: 299px; height: 179.9px;"&gt;&lt;img src="../8655/DATABASE%20C_LIBS_Koules_SampleID_22_2.jpg" alt="" width="202" height="153" /&gt;&lt;/td&gt;&#xD;
+&lt;td style="width: 217px; height: 179.9px;"&gt;&amp;nbsp;&lt;img src="https://heracles-kb.server.de/servlet/is/8655/DATABASE%20C_LIBS_Koules_SampleID_22.jpg" alt="" width="257" height="180" /&gt;&lt;/td&gt;&#xD;
+&lt;td style="width: 299px; height: 179.9px;"&gt;&lt;img src="https://heracles-kb.server.de/servlet/is/8655/DATABASE%20C_LIBS_Koules_SampleID_22_2.jpg" alt="" width="202" height="153" /&gt;&lt;/td&gt;&#xD;
 &lt;/tr&gt;&#xD;
 &lt;tr style="height: 153px;"&gt;&#xD;
 &lt;td style="width: 217px; height: 153px;"&gt;&#xD;
@@ -5264,11 +5264,11 @@ TODO: define as enum rather than as string.</rdfs:comment>
     </j.0:sensorEndpoint>
     <rdfs:comment>&lt;p&gt;The inclinometer will be used for the static monitoring of the out-of-plane rocking of specific portions of the Town Walls. The identified position for the installation of the sensor in the Zone #1, called &amp;ldquo;Forte Parco Ranghiasci&amp;rdquo;, is approximately indicated in the picture below.&lt;/p&gt;&#xD;
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;&#xD;
-&lt;p&gt;&lt;img src="../5927/inclinometer.PNG" width="476" height="217" /&gt;&lt;/p&gt;&#xD;
+&lt;p&gt;&lt;img src="https://heracles-kb.server.de/servlet/is/5927/inclinometer.PNG" width="476" height="217" /&gt;&lt;/p&gt;&#xD;
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;&#xD;
 &lt;p&gt;The inclinometer is shown below.&lt;/p&gt;&#xD;
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;&#xD;
-&lt;p&gt;&lt;img src="../5927/IMG_2362.JPG" alt="" width="200" /&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;img src="../5927/IMG_2363.JPG" alt="" width="200" /&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;img src="../5927/IMG_2364.JPG" alt="" width="200" /&gt;&lt;/p&gt;</rdfs:comment>
+&lt;p&gt;&lt;img src="https://heracles-kb.server.de/servlet/is/5927/IMG_2362.JPG" alt="" width="200" /&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;img src="https://heracles-kb.server.de/servlet/is/5927/IMG_2363.JPG" alt="" width="200" /&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;img src="https://heracles-kb.server.de/servlet/is/5927/IMG_2364.JPG" alt="" width="200" /&gt;&lt;/p&gt;</rdfs:comment>
     <rdfs:label>Inclinometer #1 at Town Walls Gubio</rdfs:label>
   </j.0:Sensor>
   <j.0:DirectEconomicValue rdf:about="DirectRevenueKoules2016">
@@ -5312,9 +5312,9 @@ TODO: define as enum rather than as string.</rdfs:comment>
         <j.0:instanceDisplayName>Accelerometer</j.0:instanceDisplayName>
         <rdfs:comment>&lt;p&gt;Accelerometer measure acceleration caused by shocks or structural influences. The sensors can identify individual frequencies and their impact on the observed object. The picture below shows the accelerometers on the roof of the Gubbio Palace.&lt;/p&gt;&#xD;
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;&#xD;
-&lt;p&gt;&lt;img src="../5964/Accelerometer_Gubbio.png" width="456" height="305" /&gt;&lt;/p&gt;&#xD;
+&lt;p&gt;&lt;img src="https://heracles-kb.server.de/servlet/is/5964/Accelerometer_Gubbio.png" width="456" height="305" /&gt;&lt;/p&gt;&#xD;
 &lt;p&gt;In the pictures below sample charts of possibly obtained data is shown. The left picture shows the accelerometer amplitudes (positive values). The right picture shows a frequency analysis and depicts the occurence of specific frequencies and their distribution. In the right column sample data in text files is provided as content.&lt;/p&gt;&#xD;
-&lt;p&gt;&lt;img src="../5964/Control_chart_Consoli_cracks.jpg" alt="" width="300" height="225" /&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;img src="../5964/Control_chart_Consoli_freq.jpg" alt="" width="300" height="225" /&gt;&lt;/p&gt;</rdfs:comment>
+&lt;p&gt;&lt;img src="https://heracles-kb.server.de/servlet/is/5964/Control_chart_Consoli_cracks.jpg" alt="" width="300" height="225" /&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;img src="https://heracles-kb.server.de/servlet/is/5964/Control_chart_Consoli_freq.jpg" alt="" width="300" height="225" /&gt;&lt;/p&gt;</rdfs:comment>
         <j.0:sensorMonitors rdf:resource="ConsoliPalace"/>
         <j.0:inSitu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
         >on</j.0:inSitu>
@@ -5407,11 +5407,11 @@ TODO: define as enum rather than as string.</rdfs:comment>
     <rdfs:comment>&lt;table style="height: 208px; width: 532px;"&gt;&#xD;
 &lt;tbody&gt;&#xD;
 &lt;tr style="height: 179.9px;"&gt;&#xD;
-&lt;td style="width: 217px; height: 179.9px;"&gt;&lt;img src="../8661/DATABASE%20D_MSI_Koules_SampleID_22_DATE_201706.jpg" width="200" /&gt;&lt;/td&gt;&#xD;
-&lt;td style="width: 299px; height: 179.9px;"&gt;&lt;img src="../8661/DATABASE%20D_MSI_Koules_SampleID_22_DATE_201706_2.jpg" width="200" /&gt;&lt;/td&gt;&#xD;
+&lt;td style="width: 217px; height: 179.9px;"&gt;&lt;img src="https://heracles-kb.server.de/servlet/is/8661/DATABASE%20D_MSI_Koules_SampleID_22_DATE_201706.jpg" width="200" /&gt;&lt;/td&gt;&#xD;
+&lt;td style="width: 299px; height: 179.9px;"&gt;&lt;img src="https://heracles-kb.server.de/servlet/is/8661/DATABASE%20D_MSI_Koules_SampleID_22_DATE_201706_2.jpg" width="200" /&gt;&lt;/td&gt;&#xD;
 &lt;/tr&gt;&#xD;
 &lt;tr style="height: 153px;"&gt;&#xD;
-&lt;td style="width: 217px; height: 153px;"&gt;&lt;img src="../8661/DATABASE%20D_MSI_Koules_SampleID_22_DATE_201706_3.jpg" width="200" /&gt;&lt;/td&gt;&#xD;
+&lt;td style="width: 217px; height: 153px;"&gt;&lt;img src="https://heracles-kb.server.de/servlet/is/8661/DATABASE%20D_MSI_Koules_SampleID_22_DATE_201706_3.jpg" width="200" /&gt;&lt;/td&gt;&#xD;
 &lt;td style="width: 299px; height: 153px;"&gt;&amp;nbsp;&lt;/td&gt;&#xD;
 &lt;/tr&gt;&#xD;
 &lt;tr style="height: 18px;"&gt;&#xD;
@@ -5437,7 +5437,7 @@ TODO: define as enum rather than as string.</rdfs:comment>
     <j.0:sensorMonitors rdf:resource="GubbioTownWalls"/>
     <j.0:sensorMonitors rdf:resource="PalaceOfKnossos"/>
     <rdfs:comment>&lt;p&gt;The picture below shows a possible output example for VNIR sensing.&lt;/p&gt;&#xD;
-&lt;p&gt;&amp;nbsp;&lt;img src="../5923/VNIR.PNG" width="317" height="241" /&gt;&lt;/p&gt;</rdfs:comment>
+&lt;p&gt;&amp;nbsp;&lt;img src="https://heracles-kb.server.de/servlet/is/5923/VNIR.PNG" width="317" height="241" /&gt;&lt;/p&gt;</rdfs:comment>
     <j.0:instanceDisplayName>Optical and VNIR Remote Sensing</j.0:instanceDisplayName>
   </j.0:Sensor>
   <j.0:Risk rdf:about="StructuralInstabilityRiskConsoliPalace">
@@ -5584,10 +5584,10 @@ TODO: define as enum rather than as string.</rdfs:comment>
 &lt;tbody&gt;&#xD;
 &lt;tr style="height: 179.9px;"&gt;&#xD;
 &lt;td style="width: 217px; height: 179.9px;"&gt;&amp;nbsp;&lt;/td&gt;&#xD;
-&lt;td style="width: 299px; height: 179.9px;"&gt;&lt;img src="../8792/Result_DATABASE%20D_MSI_Koules_SampleID_22_DATE_20181023.jpg" width="200" /&gt;&lt;/td&gt;&#xD;
+&lt;td style="width: 299px; height: 179.9px;"&gt;&lt;img src="https://heracles-kb.server.de/servlet/is/8792/Result_DATABASE%20D_MSI_Koules_SampleID_22_DATE_20181023.jpg" width="200" /&gt;&lt;/td&gt;&#xD;
 &lt;/tr&gt;&#xD;
 &lt;tr style="height: 153px;"&gt;&#xD;
-&lt;td style="width: 217px; height: 153px;"&gt;&lt;img src="../8792/Result_DATABASE%20D_MSI_Koules_SampleID_22_DATE_20181023_2.jpg" width="200" /&gt;&lt;/td&gt;&#xD;
+&lt;td style="width: 217px; height: 153px;"&gt;&lt;img src="https://heracles-kb.server.de/servlet/is/8792/Result_DATABASE%20D_MSI_Koules_SampleID_22_DATE_20181023_2.jpg" width="200" /&gt;&lt;/td&gt;&#xD;
 &lt;td style="width: 299px; height: 153px;"&gt;&amp;nbsp;&lt;/td&gt;&#xD;
 &lt;/tr&gt;&#xD;
 &lt;tr style="height: 18px;"&gt;&#xD;
@@ -5859,8 +5859,8 @@ TODO: define as enum rather than as string.</rdfs:comment>
     <rdfs:comment>&lt;table style="height: 208px; width: 532px;"&gt;&#xD;
 &lt;tbody&gt;&#xD;
 &lt;tr style="height: 179.9px;"&gt;&#xD;
-&lt;td style="width: 217px; height: 179.9px;"&gt;&amp;nbsp;&lt;img src="../8831/microscopic%20image.jpg?command=downloadContent&amp;amp;filename=microscopic%20image.jpg" alt="" width="200" /&gt;&lt;/td&gt;&#xD;
-&lt;td style="width: 299px; height: 179.9px;"&gt;&lt;img src="../8831/spectrum.jpg?command=downloadContent&amp;amp;filename=spectrum.jpg" alt="" width="255" height="180" /&gt;&lt;/td&gt;&#xD;
+&lt;td style="width: 217px; height: 179.9px;"&gt;&amp;nbsp;&lt;img src="https://heracles-kb.server.de/servlet/is/8831/microscopic%20image.jpg?command=downloadContent&amp;amp;filename=microscopic%20image.jpg" alt="" width="200" /&gt;&lt;/td&gt;&#xD;
+&lt;td style="width: 299px; height: 179.9px;"&gt;&lt;img src="https://heracles-kb.server.de/servlet/is/8831/spectrum.jpg?command=downloadContent&amp;amp;filename=spectrum.jpg" alt="" width="255" height="180" /&gt;&lt;/td&gt;&#xD;
 &lt;/tr&gt;&#xD;
 &lt;tr style="height: 153px;"&gt;&#xD;
 &lt;td style="width: 217px; height: 153px;"&gt;&amp;nbsp;No Raman bands - Weak Signal&lt;/td&gt;&#xD;
@@ -5919,7 +5919,7 @@ TODO: define as enum rather than as string.</rdfs:comment>
     <j.0:instanceUniqueName>ThreatIdentification</j.0:instanceUniqueName>
     <rdfs:comment>&lt;p&gt;The potential sources of threat may be spotted during daily monitoring activities (visually or using instruments). The sources are either directly connected to the CC hazards or could be related to other impacts, which in combination with CC hazards may affect CH asset. After the potential source of threat is observed, a site manager decides whether the identified situation is a real threat to CH and the threat assessment procedure should follow. On the other hand the threat identification may start with initiative (on-demand) from good practice or established procedures. The site manager decides whether there is threat to CH and if the threat is evident the process continues with the threat assessment procedure. These activities are shown in the figure.&lt;/p&gt;&#xD;
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;&#xD;
-&lt;p&gt;&lt;img src="../7718/Thread%20Ident_1.png" alt="" width="651" height="659" /&gt;&lt;/p&gt;&#xD;
+&lt;p&gt;&lt;img src="https://heracles-kb.server.de/servlet/is/7718/Thread%20Ident_1.png" alt="" width="651" height="659" /&gt;&lt;/p&gt;&#xD;
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;&#xD;
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;</rdfs:comment>
     <rdfs:label>Threat Identification</rdfs:label>
@@ -5953,7 +5953,7 @@ TODO: define as enum rather than as string.</rdfs:comment>
             <j.0:sensorMonitors rdf:resource="GubbioTownWalls"/>
             <rdfs:comment>&lt;p&gt;The RIS K2_FW is equipped with adual frequency (200 MHz and 600 MHz) antennais. It is a time-domain system, whose architecture is made up of three main components:&lt;br /&gt;&lt;br /&gt;- the electronic unit, which drives and commands the transmission and reception of the signal,&lt;br /&gt;and digitalizes the measured signal;&lt;br /&gt;- the antenna system, which transmits the field impinging on the target, and receives the field&lt;br /&gt;backscattered by the target;&lt;br /&gt;- the processing/monitor unit, i.e., the laptop, which controls the data acquisition and performs&lt;br /&gt;data elaboration and visualization, as well as storage of the collected waveforms. These tasks are&lt;br /&gt;performed by means of dedicated software.&lt;/p&gt;&#xD;
 &lt;p&gt;The system is show below.&lt;/p&gt;&#xD;
-&lt;p&gt;&lt;img src="../5928/GPR_Sensor.jpg" alt="" width="194" height="259" /&gt;&lt;/p&gt;</rdfs:comment>
+&lt;p&gt;&lt;img src="https://heracles-kb.server.de/servlet/is/5928/GPR_Sensor.jpg" alt="" width="194" height="259" /&gt;&lt;/p&gt;</rdfs:comment>
             <rdfs:label>Ground Penetrating Radar</rdfs:label>
           </j.0:Sensor>
         </j.0:isMeasuredWith>
@@ -5978,7 +5978,7 @@ TODO: define as enum rather than as string.</rdfs:comment>
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;&#xD;
 &lt;p&gt;The first image shows the area investigated by means of the Ground Penetrating Radar (GPR), which covers a widespread crack pattern well visible in the cross hall of the Loggia where also a Linear Variable Displacement Transducer (specifically the LVDT1) was located. It pictures the fracture, which is located between two types of walls, a stone wall (left), which is part of the external perimeter of the Palace, and a brick wall (right), which is an internal wall. The crack pattern occurs at the junction area of these two walls. The figure shows also the presence of three main cavities, due to the fall of some bricks due to wall fracture, and the arrangement of stones and bricks. In particular, it is possible to observe that the left part is made up by alternating stone blocks whose lengths are 0.40 m and 0.70 m, respectively.&lt;/p&gt;&#xD;
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;&#xD;
-&lt;p&gt;&lt;img src="../8250/Figure1.png?command=downloadContent&amp;amp;filename=Figure1.png" alt="" width="267" height="396" /&gt;&lt;/p&gt;&#xD;
+&lt;p&gt;&lt;img src="https://heracles-kb.server.de/servlet/is/8250/Figure1.png?command=downloadContent&amp;amp;filename=Figure1.png" alt="" width="267" height="396" /&gt;&lt;/p&gt;&#xD;
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;&#xD;
 &lt;p&gt;&lt;strong&gt;Description of the performed GPR analysis and results&lt;/strong&gt;&lt;/p&gt;&#xD;
 &lt;p&gt;In order to assess and monitor this crack pattern two Ground Penetrating Radar (GPR) measurement surveys were performed in July 12&lt;sup&gt;th&lt;/sup&gt; 2017 and May 8&lt;sup&gt;th&lt;/sup&gt; 2018, respectively, by using the IDS manufactured RIS K2_FW GPR system (https://idsgeoradar.com/products) equipped with a 2 GHz single fold shielded antennas.&lt;/p&gt;&#xD;
@@ -5989,7 +5989,7 @@ TODO: define as enum rather than as string.</rdfs:comment>
 &lt;p&gt;Figure 3 (right) shows the sequence of the tomographic images at increasing constant depths, from the surface towards the interior of the wall, referred to the GPR survey performed May 8&lt;sup&gt;th&lt;/sup&gt; 2018 and obtained by means of the GPR data processing chain developed during the Heracles project.&lt;/p&gt;&#xD;
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;&#xD;
 &lt;p&gt;The qualitative comparison of the tomographic images, referred to the two GPR surveys and at the same increasing depths, does not highlights significant differences. In fact, both the sequences of the tomographic images allow us to infer that the crack affecting this zone reaches a depth z of about 0.10 m, while the first, second and third cavities reach depths about 0.13 m, 0.11 m and 0.07 m, respectively. In addition, from the depth slices z = 0.50 m is possible to retrieve information about the three stone blocks, which are z = 0.70 m long and whose arrangement is similar to that of the surface stones (see Figure 1). &amp;nbsp;&lt;/p&gt;&#xD;
-&lt;p&gt;&lt;img src="../8250/Combined.gif?command=downloadContent&amp;amp;filename=Combined.gif" alt="" width="786" height="295" /&gt; &lt;/p&gt;</rdfs:comment>
+&lt;p&gt;&lt;img src="https://heracles-kb.server.de/servlet/is/8250/Combined.gif?command=downloadContent&amp;amp;filename=Combined.gif" alt="" width="786" height="295" /&gt; &lt;/p&gt;</rdfs:comment>
     <rdfs:label>GPR_results</rdfs:label>
   </j.0:Document>
   <j.0:CivilService rdf:about="GubbioMunicipality">
@@ -6279,10 +6279,10 @@ TODO: define as enum rather than as string.</rdfs:comment>
 &lt;tbody&gt;&#xD;
 &lt;tr style="height: 179.9px;"&gt;&#xD;
 &lt;td style="width: 217px; height: 179.9px;"&gt;&amp;nbsp;&lt;/td&gt;&#xD;
-&lt;td style="width: 299px; height: 179.9px;"&gt;&lt;img src="../8783/Result_DATABASE%20D_MSI_Koules_SampleID_22_DATE_20180315.jpg" width="200" /&gt;&lt;/td&gt;&#xD;
+&lt;td style="width: 299px; height: 179.9px;"&gt;&lt;img src="https://heracles-kb.server.de/servlet/is/8783/Result_DATABASE%20D_MSI_Koules_SampleID_22_DATE_20180315.jpg" width="200" /&gt;&lt;/td&gt;&#xD;
 &lt;/tr&gt;&#xD;
 &lt;tr style="height: 153px;"&gt;&#xD;
-&lt;td style="width: 217px; height: 153px;"&gt;&lt;img src="../8783/Result_DATABASE%20D_MSI_Koules_SampleID_22_DATE_20180315_2.jpg" width="200" /&gt;&lt;/td&gt;&#xD;
+&lt;td style="width: 217px; height: 153px;"&gt;&lt;img src="https://heracles-kb.server.de/servlet/is/8783/Result_DATABASE%20D_MSI_Koules_SampleID_22_DATE_20180315_2.jpg" width="200" /&gt;&lt;/td&gt;&#xD;
 &lt;td style="width: 299px; height: 153px;"&gt;&amp;nbsp;&lt;/td&gt;&#xD;
 &lt;/tr&gt;&#xD;
 &lt;tr style="height: 18px;"&gt;&#xD;
@@ -6492,7 +6492,7 @@ TODO: define as enum rather than as string.</rdfs:comment>
           <j.0:culturalHertiageElement rdf:about="KMECSt.2_Koules_External_Walls">
             <j.0:instanceDisplayName>K_MEC_St.2_Koules_External_Walls</j.0:instanceDisplayName>
             <j.0:instanceUniqueName>K/MEC/St.2_Koules_External_Walls</j.0:instanceUniqueName>
-            <rdfs:comment>&lt;p&gt;&lt;img src="../7884/Koules%20Rooms.jpg" alt="" width="905" height="595" /&gt;&lt;/p&gt;</rdfs:comment>
+            <rdfs:comment>&lt;p&gt;&lt;img src="https://heracles-kb.server.de/servlet/is/7884/Koules%20Rooms.jpg" alt="" width="905" height="595" /&gt;&lt;/p&gt;</rdfs:comment>
             <rdfs:label>K_MEC_St.2_Koules_External_Walls</rdfs:label>
           </j.0:culturalHertiageElement>
         </j.0:materialFrom>
@@ -6530,7 +6530,7 @@ TODO: define as enum rather than as string.</rdfs:comment>
           <j.0:culturalHertiageElement rdf:about="KMECSt.3_Koules_External_Walls">
             <j.0:instanceDisplayName>K_MEC_St.3_Koules_External_Walls</j.0:instanceDisplayName>
             <j.0:instanceUniqueName>K/MEC/St.3_Koules_External_Walls</j.0:instanceUniqueName>
-            <rdfs:comment>&lt;p&gt;&lt;img src="../7886/Koules%20Rooms.jpg" alt="" width="921" height="606" /&gt;&lt;/p&gt;</rdfs:comment>
+            <rdfs:comment>&lt;p&gt;&lt;img src="https://heracles-kb.server.de/servlet/is/7886/Koules%20Rooms.jpg" alt="" width="921" height="606" /&gt;&lt;/p&gt;</rdfs:comment>
             <rdfs:label>K_MEC_St.3_Koules_External_Walls</rdfs:label>
           </j.0:culturalHertiageElement>
         </j.0:materialFrom>
@@ -6568,7 +6568,7 @@ TODO: define as enum rather than as string.</rdfs:comment>
           <j.0:culturalHertiageElement rdf:about="K_MEC_St.6_Terrace">
             <j.0:instanceDisplayName>K/MEC/St.6_Terrace</j.0:instanceDisplayName>
             <j.0:instanceUniqueName>K_MEC_St.6_Terrace</j.0:instanceUniqueName>
-            <rdfs:comment>&lt;p&gt;&lt;img src="../7890/Koules%20Terrace.jpg" alt="" width="593" height="405" /&gt;&lt;/p&gt;</rdfs:comment>
+            <rdfs:comment>&lt;p&gt;&lt;img src="https://heracles-kb.server.de/servlet/is/7890/Koules%20Terrace.jpg" alt="" width="593" height="405" /&gt;&lt;/p&gt;</rdfs:comment>
             <rdfs:label>K/MEC/St.6_Terrace</rdfs:label>
           </j.0:culturalHertiageElement>
         </j.0:materialFrom>
@@ -6671,7 +6671,7 @@ TODO: define as enum rather than as string.</rdfs:comment>
           <j.0:culturalHertiageElement rdf:about="KMECSt.1_Koules_External_Walls">
             <j.0:instanceDisplayName>K_MEC_St.1_Koules_External_Walls</j.0:instanceDisplayName>
             <j.0:instanceUniqueName>K/MEC/St.1_Koules_External_Walls</j.0:instanceUniqueName>
-            <rdfs:comment>&lt;p&gt;&lt;img src="../7882/Koules%20Rooms.jpg" alt="" width="967" height="636" /&gt;&lt;/p&gt;</rdfs:comment>
+            <rdfs:comment>&lt;p&gt;&lt;img src="https://heracles-kb.server.de/servlet/is/7882/Koules%20Rooms.jpg" alt="" width="967" height="636" /&gt;&lt;/p&gt;</rdfs:comment>
             <rdfs:label>K_MEC_St.1_Koules_External_Walls</rdfs:label>
           </j.0:culturalHertiageElement>
         </j.0:materialFrom>
@@ -6710,7 +6710,7 @@ TODO: define as enum rather than as string.</rdfs:comment>
           <j.0:culturalHertiageElement rdf:about="KMECSt.5_Room_18-22">
             <j.0:instanceDisplayName>K_MEC_St.5_Room_18-22</j.0:instanceDisplayName>
             <j.0:instanceUniqueName>K/MEC/St.5_Room_18-22</j.0:instanceUniqueName>
-            <rdfs:comment>&lt;p&gt;&lt;img src="../7888/Koules%20Rooms.jpg" alt="" width="915" height="602" /&gt;&lt;/p&gt;</rdfs:comment>
+            <rdfs:comment>&lt;p&gt;&lt;img src="https://heracles-kb.server.de/servlet/is/7888/Koules%20Rooms.jpg" alt="" width="915" height="602" /&gt;&lt;/p&gt;</rdfs:comment>
             <rdfs:label>K_MEC_St.5_Room_18-22</rdfs:label>
           </j.0:culturalHertiageElement>
         </j.0:materialFrom>
@@ -6777,7 +6777,7 @@ TODO: define as enum rather than as string.</rdfs:comment>
             <j.0:text>The probe is taken from this room located at koules fortress.</j.0:text>
             <j.0:instanceDisplayName>K/MEC/St.4_Koules Room 7</j.0:instanceDisplayName>
             <j.0:instanceUniqueName>K/MEC/St.4_Koules_Room_7</j.0:instanceUniqueName>
-            <rdfs:comment>&lt;p&gt;&lt;img src="../7821/Koules%20Rooms.jpg" alt="" width="1040" height="684" /&gt;&lt;/p&gt;</rdfs:comment>
+            <rdfs:comment>&lt;p&gt;&lt;img src="https://heracles-kb.server.de/servlet/is/7821/Koules%20Rooms.jpg" alt="" width="1040" height="684" /&gt;&lt;/p&gt;</rdfs:comment>
             <rdfs:label>K/MEC/St.4_Koules Room 7</rdfs:label>
           </j.0:culturalHertiageElement>
         </j.0:materialFrom>
@@ -6879,10 +6879,10 @@ TODO: define as enum rather than as string.</rdfs:comment>
 &lt;tbody&gt;&#xD;
 &lt;tr style="height: 179.9px;"&gt;&#xD;
 &lt;td style="width: 217px; height: 179.9px;"&gt;&amp;nbsp;&lt;/td&gt;&#xD;
-&lt;td style="width: 299px; height: 179.9px;"&gt;&lt;img src="../8787/Result_DATABASE%20D_MSI_Koules_SampleID_22_DATE_20180614.jpg" width="200" /&gt;&lt;/td&gt;&#xD;
+&lt;td style="width: 299px; height: 179.9px;"&gt;&lt;img src="https://heracles-kb.server.de/servlet/is/8787/Result_DATABASE%20D_MSI_Koules_SampleID_22_DATE_20180614.jpg" width="200" /&gt;&lt;/td&gt;&#xD;
 &lt;/tr&gt;&#xD;
 &lt;tr style="height: 153px;"&gt;&#xD;
-&lt;td style="width: 217px; height: 153px;"&gt;&lt;img src="../8787/Result_DATABASE%20D_MSI_Koules_SampleID_22_DATE_20180614_2.jpg" width="200" /&gt;&lt;/td&gt;&#xD;
+&lt;td style="width: 217px; height: 153px;"&gt;&lt;img src="https://heracles-kb.server.de/servlet/is/8787/Result_DATABASE%20D_MSI_Koules_SampleID_22_DATE_20180614_2.jpg" width="200" /&gt;&lt;/td&gt;&#xD;
 &lt;td style="width: 299px; height: 153px;"&gt;&amp;nbsp;&lt;/td&gt;&#xD;
 &lt;/tr&gt;&#xD;
 &lt;tr style="height: 18px;"&gt;&#xD;
